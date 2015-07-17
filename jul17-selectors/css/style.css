@@ -1,0 +1,70 @@
+ul li {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+nav > a {
+	float: left;
+
+}
+
+nav > ul {
+	background-color: hsla(0, 100%, 50%, .25);
+	float: left;
+}
+
+nav > ul > li > a {
+	color: hsla(300, 100%, 50%, .25);
+
+ }
+
+nav::before,
+nav::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav li ul li:nth-of-type(2) {
+	background-color: green;
+}
+
+div figure:nth-child(even) img {
+	border-radius: 50%;
+}
+
+div figure::before,
+div figure::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+div figure {
+	float: left;
+	border-sizing: border-box;
+	height: 200px;
+	width: 200px;
+}
+
+div figure:nth-child(odd) img {
+     transform: rotate(45deg);
+}
+
+div figure:nth-child(3) img {
+     transform: rotate(-45deg);
+}
+
+div figure img {
+    transition: all 0.3s ease-in-out;
+}
+
+div figure img:hover {
+    transform: rotate(360deg);
+    padding: 10px;
+    border: 2px solid black;
+}
+
