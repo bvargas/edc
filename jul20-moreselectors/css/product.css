@@ -1,0 +1,45 @@
+ul {
+	width: 325px;
+	height: 485px;
+	background-color: hsla(0, 100%, 50%, 1);
+	list-style: none;
+	margin: 10px auto;
+	position: relative;
+}
+
+#top {
+	position: absolute;
+	width: 300px;
+	height: 35px;
+	background-color: white;
+	top: 10%;
+	text-align: center;
+	border-top: 6px solid white;
+	padding-top: 1px;
+	border-radius: 18px;
+}
+
+#middle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 180px solid transparent;
+    border-right: 180px solid transparent;    
+    border-bottom: 185px solid white;
+	top: 90px;
+	left: 0;	
+}
+
+img {
+	position: absolute;
+	top: 55px;
+	right: -44px;
+}
+
+#bottom {
+	position: absolute;
+	width: 50;
+	height: 50;
+	background-color: white;
+}
+
