@@ -1,0 +1,39 @@
+ul {	
+	width: 175px;
+	height: 250px;
+	margin: 0px auto;
+	list-style: none;
+	background-color: yellow;
+	border-radius: 50%;
+	position: relative;
+}
+
+#smile {
+	width: 145px;
+	height: 150px;
+	margin: 0px auto;
+	background-color: yellow;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 30px;
+	left: 38px;
+	border-bottom: 25px solid black;
+}
+
+#eyes {
+		width: 200px;
+		height: 75px;
+		position: absolute;
+		top: 40px;
+		left: 20px;
+}
+
+pre {
+	font-size: 85px;
+	line-height: 1;
+	color: black;
+	position: absolute;
+	top: 10px;
+	left: 22px;
+	margin: 0;
+}

@@ -1,0 +1,9 @@
+div { 
+	display: block;
+	width: 400px;
+	height: 250px;
+	background-color: lightgray;
+	border: 2px solid gray;
+	border-radius: 5px;
+	position: relative;
+	}

@@ -1,0 +1,10 @@
+svg {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Graph-paper.svg/400px-Graph-paper.svg.png);
+	margin-bottom: 30px;
+}
+
+circle:nth-of-type(1){stroke: hsl(202, 92%, 41%);}
+circle:nth-of-type(2){stroke: hsl(50, 98%, 46%);}
+circle:nth-of-type(3){stroke: black;}
+circle:nth-of-type(4){stroke: hsl(144, 65%, 36%);}
+circle:nth-of-type(5){stroke: hsl(349, 93%, 40%);}

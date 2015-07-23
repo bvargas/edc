@@ -24,9 +24,9 @@ ul {
 	width: 0;
 	height: 0;
 	border-left: 180px solid transparent;
-    border-right: 180px solid transparent;    
+    border-right: 185px solid transparent;    
     border-bottom: 185px solid white;
-	top: 90px;
+	top: 95px;
 	left: 0;	
 }
 
@@ -34,12 +34,24 @@ img {
 	position: absolute;
 	top: 55px;
 	right: -44px;
+
 }
 
 #bottom {
 	position: absolute;
-	width: 50;
-	height: 50;
+	width: 365px;
+	height: 190px;
 	background-color: white;
+	text-align: center;
+	bottom: 15px;
+	left: 0;
+	padding-top: 0;
+	font-size: 426%;
 }
 
+#letters {
+	position: absolute;
+	bottom: 20px;
+	color: hsla(47, 100%, 50%, 1);
+	font-size: 136%;
+}
