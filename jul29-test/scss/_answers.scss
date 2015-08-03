@@ -1,0 +1,19 @@
+%clearfix {
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+%background {
+	background-color: lighten($color-black, 85);
+	padding: 15px;
+}
+
+%button {
+	background-color: $color-blue;
+	padding: 10px;
+	border-radius: 5px;
+}

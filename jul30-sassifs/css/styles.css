@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+}
+
+h4, h5, h6 {
+  font-size: 40px;
+}
+
+h2, h3, h4 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #ee81ee;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border-color: #e228e2;
+}
+a i {
+  margin: 0 10px;
+}
+a:first-of-type i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: teal;
+}
+a:nth-of-type(2) i {
+  color: darkviolet;
+}
+a:nth-of-type(3) i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: black;
+}
+a:last-of-type i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: purple;
+}

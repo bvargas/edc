@@ -1,0 +1,20 @@
+@mixin arrow($dir, $color){
+	i{
+		@if ($dir == "up"){
+			transform: rotate(-90deg);
+			color: purple;
+		}
+		@else if ($dir == "right"){
+			color: darkviolet;
+		}
+		@else if ($dir == "down"){
+			transform: rotate(90deg);
+			color: teal;
+		}
+		@else if ($dir == "left"){
+			transform: rotate(180deg);
+			color: black;
+		}
+	}
+}
+

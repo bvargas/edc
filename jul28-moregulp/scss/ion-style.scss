@@ -1,0 +1,150 @@
+@import "variables";
+@import "layout";
+
+header {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	height: 50px;
+	padding-bottom: 10px;
+}
+
+ol, ul {
+	list-style: none;
+	a {
+	text-decoration: none;
+	color: gray;
+	}
+}
+ol li {
+	display: inline;
+	float: left;
+	font-size: 20px;
+}
+ul li { 
+	display: inline;
+	float: right;
+	padding: 10px;
+	font-size: 20px;
+	button {
+		background-color: #3385d6;
+		color: white;
+		height: 24px;
+	}
+}
+
+button {
+	text-align: center;
+	border-radius: 10px;
+}
+
+.hero {
+	height: 270px;
+	background-image: url(../image/banner.jpg);
+	background-size: cover;
+	background-position: top-center;
+	padding-top: 40px;
+	font-size: 20px;
+	text-align: center;
+
+	h1, h2{
+		color: white;
+	}
+}
+
+.two {
+	text-align: center;
+	padding-top: 75px;
+	padding-bottom: 50px;
+	font-size: 20px;
+	h1 {
+		color: gray;
+	}
+	h3 {
+		color: #adad85;
+	}
+}
+
+#one {
+	background-color: #3385d6;
+	color: white;
+	height: 28px;
+	width: 125px;
+	text-align: center;
+}
+
+#learn {
+	background-color: transparent;
+	color: white;
+	height: 28px;
+	width: 125px;	
+}
+
+aside {
+	width: 280px;
+	height: 320px;
+	padding: 0 $halfpad;
+	border: 1px solid gray;
+	margin: 15px;
+}
+
+article { 
+	width: 280px;
+	height: 320px;
+	padding: 0 $halfpad;
+	border: 1px solid gray;
+	margin: 15px;
+}
+
+.circle {
+	border-radius: 50%;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+#second {
+	padding-top: 15px;
+	text-align: center;
+	h2, p {
+		color: gray;
+	}
+}
+
+.black {
+	margin-top: 80px;
+	background-color: black;
+	width: auto;
+	height: 800px;
+}
+
+.three {
+	text-align: center;
+	padding-top: 75px;
+	font-size: 20px;
+	h1{
+		color: white;
+	}
+	h3{
+		color: gray;
+	}	
+}
+
+.img1 {
+	float: left;
+	color: white;
+	width: 400px;
+	height: 120px;
+	margin: 5px;
+	h2, p, button {
+		text-align: center;
+	}
+	button {
+		margin-left: 100px;
+	}
+}
+
+.img2 {
+	float: right;
+	width: 80px;
+	height: 120px;
+	margin: 5px;
+}

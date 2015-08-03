@@ -1,0 +1,11 @@
+$pad: 40px;
+$halfpad: $pad / 2;
+
+%clearfix {
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}

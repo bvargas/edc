@@ -1,0 +1,87 @@
+ol a::before, ul a::before, .one::before, div.row::before, ol a::after, ul a::after, .one::after, div.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  background-color: #1f0600;
+  height: 200px;
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+ol a {
+  display: inline;
+  float: left;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  padding: 60px 25px;
+}
+
+ul a {
+  display: inline;
+  float: right;
+  padding: 75px 20px;
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+button {
+  background-color: #57c9d6;
+  color: white;
+  height: 45px;
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+#banner {
+  margin: 0;
+  width: 1334px;
+}
+
+#white {
+  background-color: transparent;
+  height: 950px;
+}
+
+.one {
+  padding-top: 500px;
+  margin-left: 22px;
+  width: 23%;
+  float: left;
+}
+.one dt {
+  text-align: left;
+  padding-top: 15px;
+}
+.one dd {
+  text-align: left;
+  margin-left: 0;
+  padding-right: 40px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+div[class^="col-"] {
+  padding: 10px;
+  background-color: #382119;
+  float: left;
+}
+
+div.col-3 {
+  width: 25%;
+}
+
+div.col-6 {
+  width: 50%;
+}

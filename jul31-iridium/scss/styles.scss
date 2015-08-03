@@ -1,0 +1,175 @@
+@import "layout";
+
+header {
+	background-image: url(../image/banner.jpg);
+	background-size: cover;
+	height: 600px;
+	h1, h3 {
+		text-align: center;
+	}
+	h1 {
+		color: white;
+		padding-top: 150px;
+		margin-bottom: 0;
+		font-size: 70px;
+	}
+	h3 {
+		margin: 0;
+		color: gray;
+	}
+}
+
+nav ul {
+	text-align: center;
+	text-decoration: none;
+	li{
+		display: inline;
+		line-height: 100px;
+		padding: 20px;
+	}
+	a {
+		color: gray;
+		font-size: 20px;
+		text-decoration: none;
+		button {
+			color: gray;
+			font-size: 18px;
+			background-color: transparent;
+			border-radius: 25px;
+			height: 50px;
+			width: 150px;
+		}
+	}
+}
+
+div {box-sizing: border-box;}
+
+div.row {
+	@extend %clearfix;
+}
+
+div.col-6 {
+	padding: 60px;
+	float: left;
+	width: 60%;
+	h1 {
+		color: hsla(0, 0%, 30%, 1);
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+	h3 {
+		color: lighten(hsla(0, 0%, 30%, 1), 30);
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+	p {
+		line-height: 1.5;
+	}
+}
+
+div.col-12 {
+	@extend %clearfix;
+	float: right;
+	width: 35%;
+	h3 {
+		color: lighten(hsla(0, 0%, 30%, 1), 30);
+		margin-left: 50px;
+		padding-top: 100px;
+	}
+	img {
+		margin: 20px;
+		float: left;
+	}
+	li {
+		border-bottom: 1px solid lightgray;
+		margin:75px 30px 40px 0;
+		list-style: none;
+		padding: 10px;
+		&:last-of-type{
+			border-bottom: none;
+		}
+	}
+}
+#white {
+	background-color: lighten(hsla(0, 0%, 30%, 1), 60);
+	height: 600px;
+}
+.one {
+	@extend %clearfix;
+	padding-top: 75px;
+	margin-left: 25px;
+	width: 30%;
+	float: left;
+	img {
+		padding-top: 50px;
+	}
+	dd {
+		text-align: left;
+		margin-left: 0;
+		padding-right: 40px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	a {
+		padding-left: 85px;
+	}
+	button {
+		height: 50px;
+		background-color: hsla(11, 80%, 57%, 1);
+		padding-left: 25px;
+		padding-right: 25px;
+		text-align: center;
+		color: white;
+		border-radius: 25px;
+	}
+}
+
+div {box-sizing: border-box;}
+
+div.row2 {
+	@extend %clearfix;
+	background-color: hsla(0, 0%, 11%, 1);
+	h3 {
+		color: white;
+		padding-left: 40px;
+		padding-bottom: 50px;
+		font-size: 20px;
+	}
+	li {
+		list-style: none;
+		line-height: 2.5;
+		border-bottom: 1px solid gray;
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: lighten(hsla(0, 0%, 30%, 1), 40);
+	}
+}
+
+div.col3 {
+	padding: 60px 0 0 60px;
+	float: left;
+	width: 30%;
+}
+
+div.col6 {
+	padding: 60px;
+	float: left;
+	width: 30%;
+}
+
+div.col12 {
+	padding: 60px;
+	float: left;
+	width: 30%;
+}
+footer {
+	text-align: center;
+	padding: 50px;
+	background-color: darken(hsla(0, 0%, 30%, 1), 40);
+	color: lighten(hsla(0, 0%, 30%, 1), 40);
+	font-size: 20px;
+}
