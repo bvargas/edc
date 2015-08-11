@@ -73,6 +73,7 @@ div {
 }
 
 div[class^="col-"] {
+  height: 600px;
   padding: 10px;
   background-color: #382119;
   float: left;

@@ -1,0 +1,22 @@
+%clearfix {
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+h1 {
+		padding-top: 100px;
+		text-align: center;
+		font-size: 250%;
+	}
+
+footer {
+	text-align: center;
+	padding: 50px;
+	background-color: darken(hsla(0, 0%, 30%, 1), 40);
+	color: lighten(hsla(0, 0%, 30%, 1), 40);
+	font-size: 20px;
+} 

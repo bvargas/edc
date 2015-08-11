@@ -1,0 +1,48 @@
+body {
+	background-color: darkviolet;
+}
+
+li {
+	list-style: none;
+	a{
+		text-decoration: none;
+		color: white;
+	}
+}
+
+footer {
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 20px;
+	font-size: 18px;
+	margin-top: 150px;
+
+}
+
+@media screen and (min-width: 600){
+	nav a{
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 589px){
+	h1 {
+		margin-top: 0;
+		text-align: center;
+		font-size: 250%;
+	}
+	nav li {
+		text-align: center;
+		display: block;
+		line-height: 50px;
+	}
+	aside {
+		display: none;
+	}
+	article{
+		padding: 50px;
+		font-size: 150%;
+	}
+}
+

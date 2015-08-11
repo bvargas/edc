@@ -1,0 +1,140 @@
+@import "layout";
+
+header {
+	background-color: hsla(217, 69%, 40%, 1);
+	i {
+		color: white;
+		margin-left: 625px;
+		margin-top: 100px;
+	}
+	h1 {
+		margin-top: 0;
+		text-align: center;
+		color: white;
+		font-size: 300%;
+	}
+	ul {margin-top: 100px;
+		text-align: center;
+	}	
+	li { 
+		padding: 20px;
+		font-size: 100%;
+		list-style: none;
+		display: inline;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+img {
+	width: 90%;
+	margin: 60px;
+}
+
+main {
+	margin: 50px;
+	border-bottom: 1px solid hsla(0, 0%, 70%, 1);
+	padding-bottom: 50px;
+	height: 250px;
+	h1 {
+		text-align: center;
+		color: hsla(0, 0%, 25%, 1);
+		font-size: 300%;
+	}
+	p {
+		color: lighten(hsla(0, 0%, 25%, 1), 15);
+		text-align: center;
+		padding: 20px 75px 20px 75px;
+		line-height: 1.5;
+		font-size: 19px;
+		margin-bottom: 20px;
+	}
+}
+
+div {
+	margin-left: 75px;
+	padding-bottom: 10px;
+	height: 350px;
+
+}
+
+.one {
+	@extend %clearfix;
+	border-bottom: 1px solid hsla(0, 0%, 70%, 1);
+	padding-top: 10px;
+	margin-left: 48px;
+	width: 25%;
+	float: left;
+	h3 {
+		text-align: center;
+		font-size: 200%;
+		color: hsla(0, 0%, 25%, 1);
+	}
+	dd {
+		text-align: center;
+		margin-left: 0;
+		padding-right: 40px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-size: 110%;
+		color: lighten(hsla(0, 0%, 25%, 1), 15);
+	}
+	a {
+		padding-left: 50px;
+	}
+	button {
+		height: 50px;
+		background-color: hsla(201, 54%, 61%, 1);
+		padding-left: 40px;
+		padding-right: 40px;
+		text-align: center;
+		color: white;
+	}
+}
+
+#first {
+	margin: 50px;
+	height: 350px;
+}
+
+.two {
+	@extend %clearfix;
+	padding-top: 80px;
+	margin-left: 30px;
+	width: 20%;
+	float: left;
+	h4 {
+		margin-left: 30px;
+		text-align: center;
+		font-size: 115%;
+		color: hsla(0, 0%, 25%, 1);
+	}
+	dd {
+		text-align: center;
+		margin-left: 10px;
+		padding-left: 45px;
+		padding-right: 30px;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		font-size: 110%;
+		color: lighten(hsla(0, 0%, 25%, 1), 15);
+	}
+	a {
+		padding-left: 50px;
+	}
+	button {
+		height: 50px;
+		background-color: hsla(201, 54%, 61%, 1);
+		padding-left: 40px;
+		padding-right: 40px;
+		text-align: center;
+		color: white;
+	}
+}
+
+#second {
+	background-color: hsla(201, 56%, 93%, 1);
+	height: 250px;
+}

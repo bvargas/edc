@@ -1,0 +1,18 @@
+h1 {
+  margin: 0;
+}
+
+.header {
+  height: 440px;
+  margin: 0;
+  background-image: url(../image/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-banner {
+  padding: 40px 0;
+  background-color: #ededed;
+  text-align: center;
+}

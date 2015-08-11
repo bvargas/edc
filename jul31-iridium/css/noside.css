@@ -46,7 +46,25 @@ nav ul a button {
   width: 150px;
 }
 
+.none {
+  margin-left: 50px;
+}
+.none h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-top: 50px;
+  color: #4d4d4d;
+}
+.none h3 {
+  margin-top: 0;
+  color: #b3b3b3;
+}
+.none p {
+  line-height: 1.5;
+}
+
 #white {
+  margin-top: 100px;
   background-color: #e6e6e6;
   height: 600px;
 }

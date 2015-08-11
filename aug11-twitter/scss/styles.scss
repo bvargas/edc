@@ -1,0 +1,128 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import "variable";
+@import "layout";
+
+body {
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav {
+	ul{
+		display: flex;
+		padding: 10px 25px;
+		align-items: center;
+	}
+	li:first-of-type {
+		margin-right: auto;
+		i{
+			color: $blue;
+			font-size: 175%;
+
+		}
+	}
+	form {
+		position: relative;
+		margin: 0 20px;
+		input {
+			height: 30px;
+			border-radius: 15px;
+			border: 1px solid $darkgray;
+			background-color: $gray;
+		}
+		i {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: flex !important;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	li:last-of-type {
+		font-size: 80%;
+	}
+}
+
+main {
+	display: flex;
+	background-color: $gray;
+	padding: 15px;
+	aside {
+		flex: 1;
+	}
+	article {
+		flex: 3;
+		margin: 0 10px;
+	}
+}
+
+article {
+	header {
+		background-color: $white;
+		border: 1px solid $darkgray;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		padding: 5px 0;
+	}
+	header li {
+		display: inline-block;
+		padding: 10px 20px;
+		border: none;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+	li {
+		display: flex;
+		align-items: flex-start;
+		line-height: 1.5;
+		padding: 10px;
+		background-color: $white;
+		border: {
+			width: 0 1px 1px;
+			style: solid;
+			color: $darkgray;
+		}
+		&:hover {
+			background-color: $darkgray;
+		}
+		img {
+			margin-right: 10px;
+			border-radius: 5px;
+		}
+		h1 {
+			font-size: 80%;
+			margin-bottom: 0;
+		}
+		small {
+			color: $darkergray;
+			font-weight: 400;
+		}
+		p{
+			margin-top: 0;
+		}
+	}
+	.opts li {
+		border: none;
+		display: inline-block;
+		background-color: transparent;
+	}
+	a {
+		text-decoration: none;
+		color: $darkergray;
+		&:hover {
+			color: $darkestgray;
+		}
+	}
+}

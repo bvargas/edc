@@ -1,0 +1,58 @@
+$main-orange: hsla(11, 80%, 57%, 1);
+$main-white: hsla(0, 0%, 95%, 1);
+$main-gray: hsla(0, 0%, 13%, 1);
+
+.btn {
+	border: none;
+	text-decoration: none;
+}
+
+.btn-exmachina {
+	text-transform: uppercase;
+    color: $main-white;
+    background-color: $main-orange;
+    margin-top: 30px;
+    transition: all 250ms ease-in-out;
+    &:hover {
+    	background-color: darken($main-orange, 10);
+    }
+}
+
+#row1 img{
+		width: 100%;
+		height: auto;
+}
+
+@media screen and (max-width: 768px){
+	a.btn {
+		display: block;
+		}
+	}
+#row3 {
+	padding-bottom: 50px;
+	border-bottom: 1px solid lighten($main-gray, 20);
+	.content {
+		padding: 25px;
+		background-color: $main-white;
+	}
+	img {
+		float: left;
+		margin-right: 15px;
+	}
+	a {
+		margin-top: 0;
+	}
+}
+
+#row4 {
+		margin-left: 75px;
+		blockquote {
+			padding-top: 25px;
+			padding-bottom: 25px;
+			color: $main-gray;
+			background-color: $main-white;
+	}
+	h2{
+		color: $main-white;
+	}
+}
