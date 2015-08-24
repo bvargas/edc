@@ -1,0 +1,66 @@
+header {
+	background-image: url(../image/intro-banner.jpg);
+	background-size: cover;
+	height: 20vw;
+}
+
+nav li {
+	text-transform: uppercase;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	div{
+		box-sizing: border-box;
+		width: (100% / 3);
+		padding: 50px;
+		h2 {
+			font-family: 'Lobster', cursive;
+			color: #470024;
+		}
+	}
+}
+
+section{
+	div{ 
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		box-sizing: border-box;
+		margin: 50px;
+		figure{
+			width: (100% / 3);
+			padding: 50px;
+		}
+		img {
+			width: 200px;
+			height: 200px;
+		}
+		figure:nth-of-type(even) img{
+			border-radius: 50%;
+		}
+		figure:nth-child(odd) img {
+     		transform: rotate(45deg);
+		}
+		figure:nth-child(3) img {
+     		transform: rotate(-45deg);
+		}
+		figure img {
+    		transition: all 0.3s ease-in-out;
+		}
+		figure img:hover {
+    		transform: rotate(360deg);
+    		padding: 10px;
+    		border: 2px solid black;
+		}
+	}
+}
+
+@for $i from 1 through 6 {
+	nav li:nth-of-type(#{$i}):hover,
+	section figure img:nth-of-type(#{$i}):hover{
+		background-color: hsla(random(360), 30%, 80%, 1);
+	}
+}

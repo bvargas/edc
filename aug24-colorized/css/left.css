@@ -1,0 +1,112 @@
+#header {
+  height: 75px;
+}
+#header ul {
+  background-color: #db3d5f;
+  background-image: url(../image/overlay.png);
+  list-style: none;
+  height: 75px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+#header ul li {
+  display: inline;
+  padding: 30px;
+  font-size: 20px;
+}
+#header ul a {
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+#header ul li:last-of-type {
+  margin-left: 650px;
+  color: #b3b3b3;
+}
+
+nav {
+  background-color: #f8efce;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+nav ul {
+  margin-top: 30px;
+}
+nav li {
+  display: inline;
+  font-size: 20px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+nav a {
+  text-decoration: none;
+  color: #db3d5f;
+}
+nav a button {
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #db3d5f;
+  border-radius: 25px;
+  height: 40px;
+  width: 150px;
+}
+
+#second {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  background-color: #2b2b2b;
+  background-image: url(../image/overlay.png);
+}
+#second div {
+  box-sizing: border-box;
+  padding: 30px;
+}
+#second div a {
+  color: #db3d5f;
+}
+#second div.col-6 {
+  width: 50%;
+}
+#second div.col-6 h1 {
+  font-size: 45px;
+  color: white;
+}
+#second div.col-6 p {
+  line-height: 1.5;
+  color: #999999;
+}
+#second div.col-6 img {
+  width: 95%;
+}
+#second div.col-9 {
+  width: 25%;
+  margin-top: 20px;
+}
+#second li {
+  list-style: square;
+  padding: 10px;
+  height: 40px;
+  border-bottom: 1px solid #b3b3b3;
+}
+#second h2 {
+  color: white;
+  padding-left: 25px;
+  font-size: 30px;
+}
+
+footer {
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #999999;
+  height: 100px;
+}
+footer p {
+  padding: 35px;
+  margin-top: 0;
+}

@@ -1,0 +1,106 @@
+main {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: linear-gradient(to top, #1f0a1f, #5c1f5c, #8a2e8a, #b870b8, #e0c2e0); 
+	ul {
+		padding: 20px;
+	}			
+}
+
+header {
+	display: flex;
+	background-image: url(../image/Purple_Thunder.gif);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 0;
+	h1 {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		color: white;
+		text-align: center;
+		font-size: 100px;
+	}
+	img {
+		height:250px;
+		width: 200px;
+		padding: 15px;
+	}
+}
+
+footer {
+	background-image: url(../image/giphy.gif);
+	background-size: cover;
+	background-position: center;
+	height: 125px;
+	color: white;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 5px;
+	p{
+		text-align: center;
+		padding: 2px;
+		margin: 0;
+	}
+}
+
+ul.one {
+	display: flex;
+	justify-content: space-around;
+	li {
+		list-style: none;
+	}
+}
+
+ul.two {
+	display: flex;
+	justify-content: space-around;
+	li {
+		list-style: none;
+	}
+}
+@media screen and (max-width: 992px){
+	header {
+		background-size: cover;
+		height: 200px;
+		img {
+		height: 175px;
+		width: 150px;
+		}
+		h1 {
+		text-align: center;
+		font-size: 95px;
+		}
+	}
+
+	main {
+		img {
+			height: 100px;
+			width: 125px;
+		}
+	}
+}
+
+@media screen and (max-width: 732px){
+	header {
+		background-size: cover;
+		height: 100px;
+		img {
+			height: 80px;
+			width: 95px;
+		}
+		h1{
+			text-align: center;
+			font-size: 50px;
+		}
+	}
+	main {
+		img {
+			height: 100px;
+			width: 125px;
+		}
+	}
+}
+

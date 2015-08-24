@@ -1,0 +1,75 @@
+header {
+	display: flex;
+	background-image: url(../image/Purple_Thunder.gif);
+	background-size: cover;
+	background-position: center;
+	img {
+		height: 200px;
+		width: 250px;
+		padding: 15px;
+	}
+}
+
+footer {
+	background-image: url(../image/giphy.gif);
+	background-size: cover;
+	background-position: center;
+	height: 125px;
+	color: white;
+	font-size: 20px;
+	margin-bottom: 0;
+	p{
+		text-align: center;
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	border-bottom: 2px solid purple;
+	ul {
+		display: flex;
+	}
+	li {
+		display: flex;
+		padding: 100px;
+		margin-left: 30px;
+		list-style: none;
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 992px){
+	header {
+		background-size: cover;
+		height: 150px;
+		img {
+			height: 125px;
+			width: 175px;
+		}
+	}
+	nav {
+		height: 100px;
+		li {
+			padding: 40px;
+		}
+	}
+}
+@media screen and (max-width: 732px){
+	header {
+		background-size: cover;
+		height: 100px;
+		img {
+			height: 80px;
+			width: 90px;
+		}
+	}
+	nav {
+		height: 100px;
+		li {
+			padding: 20px;
+		}
+	}
+}

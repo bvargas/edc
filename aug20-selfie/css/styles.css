@@ -1,0 +1,102 @@
+header {
+  background-image: url(../image/intro-banner.jpg);
+  background-size: cover;
+  height: 20vw;
+}
+
+nav li {
+  text-transform: uppercase;
+}
+
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+main div {
+  box-sizing: border-box;
+  width: 33.33333%;
+  padding: 50px;
+}
+main div h2 {
+  font-family: 'Lobster', cursive;
+  color: #470024;
+}
+
+section div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  box-sizing: border-box;
+  margin: 50px;
+}
+section div figure {
+  width: 33.33333%;
+  padding: 50px;
+}
+section div img {
+  width: 200px;
+  height: 200px;
+}
+section div figure:nth-of-type(even) img {
+  border-radius: 50%;
+}
+section div figure:nth-child(odd) img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+section div figure:nth-child(3) img {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+section div figure img {
+  transition: all 0.3s ease-in-out;
+}
+section div figure img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  padding: 10px;
+  border: 2px solid black;
+}
+
+nav li:nth-of-type(1):hover,
+section figure img:nth-of-type(1):hover {
+  background-color: #dbbdcd;
+}
+
+nav li:nth-of-type(2):hover,
+section figure img:nth-of-type(2):hover {
+  background-color: #dbbdcb;
+}
+
+nav li:nth-of-type(3):hover,
+section figure img:nth-of-type(3):hover {
+  background-color: #bdbedb;
+}
+
+nav li:nth-of-type(4):hover,
+section figure img:nth-of-type(4):hover {
+  background-color: #bdd3db;
+}
+
+nav li:nth-of-type(5):hover,
+section figure img:nth-of-type(5):hover {
+  background-color: #dbbdd3;
+}
+
+nav li:nth-of-type(6):hover,
+section figure img:nth-of-type(6):hover {
+  background-color: #c8bddb;
+}

@@ -3,5 +3,10 @@ main {
 	min-height: 100%;
 	background-color: #ffa375;
 	display: flex;
+	li {
+		display: flex;
+		flex-direction: column;
+		justify-content: stretch;
+	}
 }
 
