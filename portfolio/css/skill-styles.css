@@ -50,7 +50,6 @@ nav li {
   padding: 100px;
   margin-left: 30px;
   list-style: none;
-  display: inline;
 }
 
 @media screen and (max-width: 992px) {
@@ -96,6 +95,9 @@ div {
   box-sizing: border-box;
 }
 
+div.row {
+  margin: 50px 25px;
+}
 div.row li {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -103,10 +105,6 @@ div.row li {
   -webkit-justify-content: space around;
       -ms-flex-pack: space around;
           justify-content: space around;
-}
-div.row li img {
-  margin: 5px;
-  border-radius: 5px;
 }
 div.row h3 {
   font-size: 120%;
@@ -124,10 +122,36 @@ li.col6 {
   float: left;
   width: 45%;
 }
+li.col6 img {
+  width: 35%;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+}
 
 li.col12 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 45%;
+}
+li.col12 img {
+  width: 35%;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 50%;
+  margin: 50px 250px;
+}
+.list h2 {
+  padding: 20px;
 }

@@ -50,7 +50,6 @@ nav li {
   padding: 100px;
   margin-left: 30px;
   list-style: none;
-  display: inline;
 }
 
 @media screen and (max-width: 992px) {
@@ -89,4 +88,37 @@ nav li {
 }
 footer h2 {
   text-align: center;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.pic {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  box-sizing: border-box;
+  margin: 5px;
+}
+.pic img {
+  width: 75px;
+  height: 75px;
+}
+.pic figure img {
+  transition: all 0.3 ease-in-out;
+}
+.pic figure img:hover {
+  padding: 5px;
+  border: 2px solid purple;
+}
+
+div {
+  margin: 50px;
 }

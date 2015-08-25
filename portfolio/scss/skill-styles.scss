@@ -7,16 +7,15 @@ footer {
 	}
 }
 
-div{box-sizing: border-box;}
+div{
+	box-sizing: border-box;
+}
 
 div.row { 
+	margin: 50px 25px;
 	li {
 		display: flex;
 		justify-content: space around;
-		img {
-		margin: 5px;
-		border-radius: 5px;
-		}
 	}
 	h3 {
 		font-size: 120%;
@@ -32,13 +31,34 @@ li.col6{
 	display: flex;
 	float: left;
 	width: 45%;
+	img {
+			width: 35%;
+			height: 100px;
+			margin: 5px;
+			border-radius: 5px;
+		}
 }
 
 li.col12{
 	display: flex;
 	width: 45%;
+	img {
+			width: 35%;
+			height: 100px;
+			margin: 5px;
+			border-radius: 5px;
+		}
 }
 
+.list {
+	display: flex;
+	justify-content: space-around;
+	width: (100% / 2);
+	margin: 50px 250px;
+	h2 {
+		padding: 20px;
+	}
+}
 
 
 

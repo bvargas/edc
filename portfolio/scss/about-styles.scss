@@ -6,6 +6,33 @@ footer {
 	}
 }
 
+h2, h3 {
+	text-align: center;
+}
+
+.pic {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		box-sizing: border-box;
+		margin: 5px;
+	img{
+		width: 75px;
+		height: 75px;
+	}
+	figure img {
+		transition: all 0.3 ease-in-out;
+	}
+	figure img:hover{
+		padding: 5px;
+		border: 2px solid purple;
+	}
+}
+
+div {
+	margin: 50px;
+}
+
 
 
 
