@@ -1,0 +1,144 @@
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../image/Purple_Thunder.gif);
+  background-size: cover;
+  background-position: center;
+}
+header img {
+  height: 200px;
+  width: 250px;
+  padding: 15px;
+}
+
+footer {
+  background-image: url(../image/giphy.gif);
+  background-size: cover;
+  background-position: center;
+  height: 125px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+footer p {
+  text-align: center;
+}
+
+nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  border-bottom: 2px solid purple;
+}
+nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+  margin-left: 30px;
+  list-style: none;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    background-size: cover;
+    height: 150px;
+  }
+  header img {
+    height: 125px;
+    width: 175px;
+  }
+
+  nav {
+    height: 100px;
+  }
+  nav li {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 732px) {
+  header {
+    background-size: cover;
+    height: 100px;
+  }
+  header img {
+    height: 80px;
+    width: 90px;
+  }
+
+  nav {
+    height: 100px;
+  }
+  nav li {
+    padding: 20px;
+  }
+}
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+address {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+address i {
+  padding: 50px;
+}
+address .fa {
+  font-size: 100px;
+  color: gray;
+}
+address p {
+  font-size: 20px;
+  color: black;
+}
+
+footer h2 {
+  margin: 0;
+  text-align: center;
+  color: lightgray;
+}
+footer p {
+  margin: 0;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  main address i {
+    padding: 20px;
+  }
+  main address .fa {
+    font-size: 80px;
+  }
+  main address p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 732px) {
+  main address i {
+    padding: 20px;
+  }
+  main address .fa {
+    font-size: 50px;
+  }
+  main address p {
+    font-size: 15px;
+  }
+}

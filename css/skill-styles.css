@@ -1,0 +1,157 @@
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../image/Purple_Thunder.gif);
+  background-size: cover;
+  background-position: center;
+}
+header img {
+  height: 200px;
+  width: 250px;
+  padding: 15px;
+}
+
+footer {
+  background-image: url(../image/giphy.gif);
+  background-size: cover;
+  background-position: center;
+  height: 125px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+footer p {
+  text-align: center;
+}
+
+nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  border-bottom: 2px solid purple;
+}
+nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+  margin-left: 30px;
+  list-style: none;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    background-size: cover;
+    height: 150px;
+  }
+  header img {
+    height: 125px;
+    width: 175px;
+  }
+
+  nav {
+    height: 100px;
+  }
+  nav li {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 732px) {
+  header {
+    background-size: cover;
+    height: 100px;
+  }
+  header img {
+    height: 80px;
+    width: 90px;
+  }
+
+  nav {
+    height: 100px;
+  }
+  nav li {
+    padding: 20px;
+  }
+}
+footer p {
+  margin: 0;
+  padding-top: 5px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+div.row {
+  margin: 50px 25px;
+}
+div.row li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space around;
+      -ms-flex-pack: space around;
+          justify-content: space around;
+}
+div.row h3 {
+  font-size: 120%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+div.row p {
+  margin-top: 0;
+}
+
+li.col6 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  width: 45%;
+}
+li.col6 img {
+  width: 35%;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+li.col12 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+}
+li.col12 img {
+  width: 35%;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 50%;
+  margin: 50px 250px;
+}
+.list h2 {
+  padding: 20px;
+}
