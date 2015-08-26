@@ -1,0 +1,59 @@
+@import "layout";
+@import "partial";
+
+.middle {
+	display: flex;
+	padding: 20px;
+	background-image: url(../image/overlay.png);
+	div {
+		box-sizing: border-box;
+		a {
+			color: hsla(0, 100%, 50%, 1);
+		}
+	}
+	.col9 {
+		width: 60%;
+		padding: 35px;
+		h1 {
+			font-size: 50px;
+			margin-bottom: 0;
+		}
+		h4 {
+			padding-bottom: 15px;
+			text-transform: uppercase;
+		}
+		img {
+			width: 95%;
+			height: 10vw;
+			border-radius: 10px;
+		}
+		p{
+			line-height: 1.5;
+			font-size: 17px;
+		}
+	}
+	.col12 {
+		width: 40%;
+		padding: 25px;
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		h2 {
+			font-size: 35px;
+			margin-bottom: 0;
+			margin-left: 0;
+		}
+		h4 {
+			padding-bottom: 20px;
+			text-transform: uppercase;
+		}
+		p {
+			line-height: 2;
+		}
+		.link {
+			p{
+				line-height: 1.5;
+			}
+		}
+	}
+}
