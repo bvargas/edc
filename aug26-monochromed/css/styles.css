@@ -1,0 +1,172 @@
+header {
+  background-image: url(../image/header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header h1, header h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+header h1 {
+  padding-top: 100px;
+  margin-top: 50px;
+  font-size: 50px;
+  color: #323339;
+  margin-bottom: 0;
+}
+header h3 {
+  margin-top: 0;
+  color: #8e8588;
+  padding-bottom: 50px;
+}
+header nav {
+  width: 70%;
+  text-align: center;
+  margin-left: 15%;
+  padding-bottom: 150px;
+}
+header nav ul {
+  background-color: #121212;
+  border-radius: 40px;
+  padding: 25px 0;
+  width: 100%;
+}
+header nav ul li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px;
+}
+header nav ul li a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+
+header span {
+  color: white;
+}
+
+.top {
+  background-image: url(../image/overlay.png);
+}
+.top .first {
+  padding-top: 50px;
+}
+.top .first h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 45px;
+  padding-left: 50px;
+}
+.top main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25;
+  margin: 0 40px;
+  padding-top: 0;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.top main div {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.top main img {
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.top main p {
+  padding: 20px 10px;
+  line-height: 2;
+}
+.top main button {
+  margin-left: 10px;
+  width: 45%;
+  height: 40px;
+  text-transform: uppercase;
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.middle {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  margin-top: 40px;
+}
+.middle div {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.middle div a {
+  color: red;
+}
+.middle .col9 {
+  width: 70%;
+  padding: 35px;
+}
+.middle .col9 h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.middle .col9 h4 {
+  margin-top: 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.middle .col9 img {
+  width: 95%;
+  height: 15vw;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.middle .col9 p {
+  line-height: 2;
+}
+.middle .col9 button {
+  width: 15%;
+  height: 50px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.middle .col12 {
+  width: 30%;
+  padding: 25px;
+  margin-top: 40px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.middle .col12 h2 {
+  font-size: 35px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.middle .col12 h4 {
+  margin-top: 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.middle .col12 p {
+  line-height: 2;
+}
+.middle .col12 .link p {
+  line-height: 1.5;
+}
