@@ -108,9 +108,9 @@ nav {
 	}
 }
 	
-	h2 {
-		color: white;
-		padding-left: 25px;
+h2 {
+	color: white;
+	padding-left: 25px;
 		font-size: 30px;
 	}
 }
@@ -130,4 +130,35 @@ div.picture {
 	height: 10vw;
 	background-image: url(../image/banner.jpg);
 	background-size: cover;
+}
+
+@media screen and (max-width: 844px){
+	nav {
+		li{
+			padding: 10px;
+			font-size: 15px;
+		}
+		a {
+			button {
+			font-size: 15px;
+			width: 100px;
+			}
+		}
+	}
+	#second {
+		padding: 15px;
+		div {
+			padding: 20px;
+		}
+		div.col-6 {
+			h1 {
+				font-size: 35px;
+			}
+		}
+		div.col-9 {
+			a{
+				font-size: 10px;
+			}
+		}
+	}
 }

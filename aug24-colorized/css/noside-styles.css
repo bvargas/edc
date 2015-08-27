@@ -125,6 +125,29 @@ div.picture {
   background-size: cover;
 }
 
+@media screen and (max-width: 844px) {
+  nav li {
+    padding: 10px;
+    font-size: 15px;
+  }
+  nav a button {
+    font-size: 15px;
+    width: 100px;
+  }
+
+  #second {
+    padding: 15px;
+  }
+  #second div {
+    padding: 20px;
+  }
+  #second div.col-6 h1 {
+    font-size: 35px;
+  }
+  #second div.col-9 a {
+    font-size: 10px;
+  }
+}
 main {
   padding: 70px;
 }

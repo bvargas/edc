@@ -155,3 +155,6 @@ li.col12 img {
 .list h2 {
   padding: 20px;
 }
+.list li {
+  line-height: 2;
+}
