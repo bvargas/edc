@@ -1,0 +1,8 @@
+header {
+  background-image: url(../image/pic01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header nav {
+  background-color: none;
+}
