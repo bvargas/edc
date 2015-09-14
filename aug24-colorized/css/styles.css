@@ -125,9 +125,9 @@ div.picture {
   background-size: cover;
 }
 
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 630px) {
   nav li {
-    padding: 10px;
+    padding: 5px;
     font-size: 15px;
   }
   nav a button {
@@ -144,8 +144,15 @@ div.picture {
   #second div.col-6 h1 {
     font-size: 35px;
   }
-  #second div.col-9 a {
+  #second div.col-9 {
+    padding: 0;
+  }
+  #second div.col-9 i {
     font-size: 10px;
+    border-bottom: none;
+  }
+  #second div.col-9 i a {
+    font-size: 12px;
   }
 }
 .pic {

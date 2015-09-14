@@ -1,0 +1,53 @@
+body {
+  background-color: rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+div {
+  background-color: white;
+  width: 50vw;
+  height: 50vw;
+  margin: 50px auto;
+  position: relative;
+}
+div img {
+  width: 25%;
+  height: auto;
+  position: absolute;
+}
+div .cat-1 {
+  left: 0;
+  right: 0;
+}
+div .cat-2 {
+  left: auto;
+  right: 0;
+}
+div .cat-3 {
+  left: 0;
+  bottom: 0;
+}
+div .cat-4 {
+  bottom: 0;
+  right: 0;
+}
+div .cat-5 {
+  left: 40%;
+  top: 35%;
+}
+div .cat5 {
+  left: 0;
+  top: 35%;
+}
+div .cat6 {
+  right: 0;
+  top: 35%;
+}
+
+div::after {
+  content: "";
+  display: block;
+  height: 5px;
+  /* DONT KNOW THIS PART JUST SHOWING HOW IT WORKS */
+  clear: both;
+}

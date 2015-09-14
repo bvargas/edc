@@ -1,0 +1,31 @@
+nav {
+  border-radius: 5px;
+  background-image: linear-gradient(to top, black, purple, teal);
+}
+nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav ul {
+  padding: 5px;
+  float: right;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  width: 65px;
+}
+nav ul li a {
+  display: block;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 -1px 1px black, 0 1px 1px white;
+}
+nav ul li a:hover {
+  background-image: linear-gradient(to bottom, purple, black, teal);
+  border-radius: 50%;
+  border: 1px solid white;
+}

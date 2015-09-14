@@ -1,0 +1,80 @@
+@import "layout";
+
+header {
+	background-image: url(../image/header-bg.jpg);
+	background-size: cover;
+	padding: 100px;
+	width: 100%;
+	margin-bottom: 50px;
+	
+	.top {
+		padding-bottom: 100px;
+		h1 {
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 50px;
+				float: left;
+			}
+		}
+		li {
+			float: right;
+			list-style: none;
+			display: inline;
+			padding: 10px;
+				a {
+					display: inline;
+					color: white;
+					text-decoration: none;
+					font-size: 20px;
+					@extend %clearfix;
+			}
+		}
+	}
+	.bottom {
+		width: 100%;
+		h1 {
+			width: 75%;
+			color: white;
+			font-size: 60px;
+			text-align: center;
+			margin-top: 75px;
+			margin-bottom: 0;
+		}
+		h2 {
+			width: 75%;
+			margin-top: 0;
+			text-align: center;
+			font-size: 30px;
+			color: hsla(0, 100%, 100%, 0.6);
+		}
+		ul {
+			width: 65%;
+			margin: 30px auto;
+			padding-top: 100px;
+			li {
+				list-style: none;
+				text-align: center;
+				display: inline;
+				margin: 20px;
+				a {
+				color: hsla(0, 100%, 100%, 1);
+				text-decoration: none;
+				border: 2px solid hsla(0, 100%, 100%, 1);
+				border-radius: 10px;
+				padding: 25px 30px;
+				font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+main {
+	img {
+		width: 100%;
+	}
+	h1, h3 {
+		text-align: center;
+	}
+}

@@ -132,10 +132,10 @@ div.picture {
 	background-size: cover;
 }
 
-@media screen and (max-width: 844px){
+@media screen and (max-width: 630px){
 	nav {
 		li{
-			padding: 10px;
+			padding: 5px;
 			font-size: 15px;
 		}
 		a {
@@ -156,8 +156,13 @@ div.picture {
 			}
 		}
 		div.col-9 {
-			a{
+			padding: 0;
+			i {
 				font-size: 10px;
+				border-bottom: none;
+				a {
+					font-size: 12px;
+				}
 			}
 		}
 	}

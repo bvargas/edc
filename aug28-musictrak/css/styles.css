@@ -1,0 +1,439 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,700%7CPlayfair+Display:400,700);
+body {
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+strong {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .bio {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+main .stats-wrap {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.bio img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+@media screen and (max-width: 991px) {
+  .bio .img-lg {
+    display: none;
+  }
+  .bio .img-sm {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bio .img-lg {
+    display: block;
+  }
+  .bio .img-sm {
+    display: none;
+  }
+}
+.bio blockquote {
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 1em 2em;
+  margin: 50px 0;
+  border-left: 2px solid lightgray;
+  position: relative;
+}
+.bio blockquote::before {
+  content: '\201C';
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-size: 5em;
+  position: absolute;
+  top: -.5em;
+  left: 0;
+}
+.bio .album-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.bio .album-wrap div:nth-of-type(1) {
+  background-image: url("../image/album-adele.jpg");
+}
+.bio .album-wrap div:nth-of-type(2) {
+  background-image: url("../image/album-ariana-grande.jpg");
+}
+.bio .album-wrap div:nth-of-type(3) {
+  background-image: url("../image/album-bastille.jpg");
+}
+.bio .album-wrap div:nth-of-type(4) {
+  background-image: url("../image/album-beyonce.jpg");
+}
+.bio .album-wrap div:nth-of-type(5) {
+  background-image: url("../image/album-bruno-mars.jpg");
+}
+.bio .album-wrap div:nth-of-type(6) {
+  background-image: url("../image/album-coldplay.jpg");
+}
+.bio .album-wrap div:nth-of-type(7) {
+  background-image: url("../image/album-dmx.jpg");
+}
+.bio .album-wrap div:nth-of-type(8) {
+  background-image: url("../image/album-guns-n-roses.jpg");
+}
+.bio .album-wrap div:nth-of-type(9) {
+  background-image: url("../image/album-katy-perry.jpg");
+}
+.bio .album-wrap div:nth-of-type(10) {
+  background-image: url("../image/album-mariah-carey.jpg");
+}
+.bio .album-wrap div:nth-of-type(11) {
+  background-image: url("../image/album-misfits.jpg");
+}
+.bio .album-wrap div:nth-of-type(12) {
+  background-image: url("../image/album-moby.jpg");
+}
+.bio .album-wrap div:nth-of-type(13) {
+  background-image: url("../image/album-notorious-big.jpg");
+}
+.bio .album-wrap div:nth-of-type(14) {
+  background-image: url("../image/album-offspring.jpg");
+}
+.bio .album-wrap div:nth-of-type(15) {
+  background-image: url("../image/album-outkast.jpg");
+}
+.bio .album-wrap div:nth-of-type(16) {
+  background-image: url("../image/album-pink-floyd.jpg");
+}
+.bio .album-wrap div:nth-of-type(17) {
+  background-image: url("../image/album-sia.jpg");
+}
+.bio .album-wrap div:nth-of-type(18) {
+  background-image: url("../image/album-stone-temple-pilots.jpg");
+}
+.bio .album-wrap div:nth-of-type(19) {
+  background-image: url("../image/album-sublime.jpg");
+}
+.bio .album-wrap div:nth-of-type(20) {
+  background-image: url("../image/album-weezer.jpg");
+}
+.bio .album-wrap div {
+  width: 85px;
+  height: 85px;
+  margin: 5px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.stats-graph {
+  background-color: rgba(122, 163, 184, 0.25);
+  padding: 20px;
+}
+.stats-graph h1 {
+  text-align: center;
+  color: #7aa3b8;
+}
+.stats-graph div {
+  margin-bottom: 20px;
+  background-color: rgba(122, 163, 184, 0.25);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.stats-graph div:nth-of-type(1)::before {
+  background-image: url("../image/user-angie.jpg");
+}
+.stats-graph div:nth-of-type(1) span::before {
+  content: "angie";
+}
+.stats-graph div:nth-of-type(2)::before {
+  background-image: url("../image/user-brianne.jpg");
+}
+.stats-graph div:nth-of-type(2) span::before {
+  content: "brianne";
+}
+.stats-graph div:nth-of-type(3)::before {
+  background-image: url("../image/user-claire.jpg");
+}
+.stats-graph div:nth-of-type(3) span::before {
+  content: "claire";
+}
+.stats-graph div:nth-of-type(4)::before {
+  background-image: url("../image/user-franklin.jpg");
+}
+.stats-graph div:nth-of-type(4) span::before {
+  content: "franklin";
+}
+.stats-graph div:nth-of-type(5)::before {
+  background-image: url("../image/user-gary.jpg");
+}
+.stats-graph div:nth-of-type(5) span::before {
+  content: "gary";
+}
+.stats-graph div:nth-of-type(6)::before {
+  background-image: url("../image/user-genie.jpg");
+}
+.stats-graph div:nth-of-type(6) span::before {
+  content: "genie";
+}
+.stats-graph div:nth-of-type(7)::before {
+  background-image: url("../image/user-jacob.jpg");
+}
+.stats-graph div:nth-of-type(7) span::before {
+  content: "jacob";
+}
+.stats-graph div:nth-of-type(8)::before {
+  background-image: url("../image/user-jonathan.jpg");
+}
+.stats-graph div:nth-of-type(8) span::before {
+  content: "jonathan";
+}
+.stats-graph div:nth-of-type(9)::before {
+  background-image: url("../image/user-phillip.jpg");
+}
+.stats-graph div:nth-of-type(9) span::before {
+  content: "phillip";
+}
+.stats-graph div:nth-of-type(10)::before {
+  background-image: url("../image/user-rebecca.jpg");
+}
+.stats-graph div:nth-of-type(10) span::before {
+  content: "rebecca";
+}
+.stats-graph div:nth-of-type(11)::before {
+  background-image: url("../image/user-shaun.jpg");
+}
+.stats-graph div:nth-of-type(11) span::before {
+  content: "shaun";
+}
+.stats-graph div:nth-of-type(12)::before {
+  background-image: url("../image/user-tessa.jpg");
+}
+.stats-graph div:nth-of-type(12) span::before {
+  content: "tessa";
+}
+.stats-graph div::before {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.stats-graph div:nth-of-type(1) span {
+  width: calc(61% - 55px);
+  background-color: #32cd37;
+}
+.stats-graph div:nth-of-type(2) span {
+  width: calc(119% - 55px);
+  background-color: #0009ff;
+}
+.stats-graph div:nth-of-type(3) span {
+  width: calc(40% - 55px);
+  background-color: #91b34d;
+}
+.stats-graph div:nth-of-type(4) span {
+  width: calc(52% - 55px);
+  background-color: #61c23d;
+}
+.stats-graph div:nth-of-type(5) span {
+  width: calc(119% - 55px);
+  background-color: #0009ff;
+}
+.stats-graph div:nth-of-type(6) span {
+  width: calc(91% - 55px);
+  background-color: #0becf4;
+}
+.stats-graph div:nth-of-type(7) span {
+  width: calc(88% - 55px);
+  background-color: #0ff0e1;
+}
+.stats-graph div:nth-of-type(8) span {
+  width: calc(87% - 55px);
+  background-color: #11eed8;
+}
+.stats-graph div:nth-of-type(9) span {
+  width: calc(34% - 55px);
+  background-color: #9fab54;
+}
+.stats-graph div:nth-of-type(10) span {
+  width: calc(27% - 55px);
+  background-color: #a29b5d;
+}
+.stats-graph div:nth-of-type(11) span {
+  width: calc(24% - 55px);
+  background-color: #9e9261;
+}
+.stats-graph div:nth-of-type(12) span {
+  width: calc(55% - 55px);
+  background-color: #51c639;
+}
+.stats-graph span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  background-color: #7aa3b8;
+  padding: 0 10px;
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
+.stats-deets ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+  list-style: none;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
+.stats-deets li {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 50vw;
+  padding: 20px;
+}
+.stats-deets li:nth-of-type(1) div {
+  background-image: url("../image/album-adele.jpg");
+}
+.stats-deets li:nth-of-type(2) div {
+  background-image: url("../image/album-ariana-grande.jpg");
+}
+.stats-deets li:nth-of-type(3) div {
+  background-image: url("../image/album-bastille.jpg");
+}
+.stats-deets li:nth-of-type(4) div {
+  background-image: url("../image/album-beyonce.jpg");
+}
+.stats-deets li:nth-of-type(5) div {
+  background-image: url("../image/album-bruno-mars.jpg");
+}
+.stats-deets li:nth-of-type(6) div {
+  background-image: url("../image/album-coldplay.jpg");
+}
+.stats-deets li:nth-of-type(7) div {
+  background-image: url("../image/album-dmx.jpg");
+}
+.stats-deets li:nth-of-type(8) div {
+  background-image: url("../image/album-guns-n-roses.jpg");
+}
+.stats-deets li:nth-of-type(9) div {
+  background-image: url("../image/album-katy-perry.jpg");
+}
+.stats-deets li:nth-of-type(10) div {
+  background-image: url("../image/album-mariah-carey.jpg");
+}
+.stats-deets li:nth-of-type(11) div {
+  background-image: url("../image/album-misfits.jpg");
+}
+.stats-deets li:nth-of-type(12) div {
+  background-image: url("../image/album-moby.jpg");
+}
+.stats-deets li:nth-of-type(13) div {
+  background-image: url("../image/album-notorious-big.jpg");
+}
+.stats-deets li:nth-of-type(14) div {
+  background-image: url("../image/album-offspring.jpg");
+}
+.stats-deets li:nth-of-type(15) div {
+  background-image: url("../image/album-outkast.jpg");
+}
+.stats-deets li:nth-of-type(16) div {
+  background-image: url("../image/album-pink-floyd.jpg");
+}
+.stats-deets li:nth-of-type(17) div {
+  background-image: url("../image/album-sia.jpg");
+}
+.stats-deets li:nth-of-type(18) div {
+  background-image: url("../image/album-stone-temple-pilots.jpg");
+}
+.stats-deets li:nth-of-type(19) div {
+  background-image: url("../image/album-sublime.jpg");
+}
+.stats-deets li:nth-of-type(20) div {
+  background-image: url("../image/album-weezer.jpg");
+}
+.stats-deets div {
+  width: 25vw;
+  height: 25vw;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

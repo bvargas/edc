@@ -1,0 +1,47 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+	height: 100px;
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		#logo {
+			float: left;
+			margin: 0 auto;
+			h1 {
+				text-transform: uppercase;
+				font-size: 250%;
+			}
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+	nav {
+		float: right;
+		ul {
+			margin: 25px auto;
+			li {
+				display: inline-block;
+				text-transform: uppercase;
+				font-size: 110%;
+				padding: 20px;
+				a {
+					text-decoration: none;
+					color: hsla(0, 0%, 20%, 1);
+				}
+			}
+		}
+	}
+}
+
+.pic {
+	background-image: url(../image/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	padding-top: 200px;
+}

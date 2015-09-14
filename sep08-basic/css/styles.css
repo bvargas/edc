@@ -1,0 +1,78 @@
+header .top li a::before, header .top li a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  background-image: url(../image/header-bg.jpg);
+  background-size: cover;
+  padding: 100px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+header .top {
+  padding-bottom: 100px;
+}
+header .top h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  float: left;
+}
+header .top li {
+  float: right;
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+header .top li a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+header .bottom {
+  width: 100%;
+}
+header .bottom h1 {
+  width: 75%;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 0;
+}
+header .bottom h2 {
+  width: 75%;
+  margin-top: 0;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.6);
+}
+header .bottom ul {
+  width: 65%;
+  margin: 30px auto;
+  padding-top: 100px;
+}
+header .bottom ul li {
+  list-style: none;
+  text-align: center;
+  display: inline;
+  margin: 20px;
+}
+header .bottom ul li a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 25px 30px;
+  font-size: 20px;
+}
+
+main img {
+  width: 100%;
+}
+main h1, main h3 {
+  text-align: center;
+}
