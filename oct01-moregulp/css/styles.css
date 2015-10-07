@@ -1,0 +1,23 @@
+body {
+  background-image: url(../image/bg.jpg);
+}
+
+header {
+  color: white;
+}
+header h1 {
+  margin-left: 10%;
+  float: left;
+}
+header nav ul {
+  float: right;
+}
+header nav ul li {
+  display: inline;
+  font-size: 1.3em;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}

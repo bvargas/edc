@@ -1,0 +1,36 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+$red: hsla(360, 100%, 36%, 0.6);
+$orange: hsla(23, 93%, 50%, 0.91);
+$purple: hsla(286, 93%, 36%, 0.75);
+$turquoise: hsla(165, 93%, 32%, 0.79);
+$blue: hsla(245, 84%, 32%, 0.86);
+$size: 24px;
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+	font-size: $size;
+		i.fa {
+		font-size: $size / 2;
+		}
+	}
+}
+
+li:nth-child(1){
+	color: $red;
+}
+li:nth-child(2){
+	color: $orange;
+}
+li:nth-child(3){
+	color: $purple;
+}
+li:nth-child(4){
+	color: $turquoise;
+}
+li:nth-child(5){
+	color: $blue;
+}
