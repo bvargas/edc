@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+$drkgray: hsla(222, 10%, 33%, 1);
+$gray: lighten($drkgray, 10);
+$litgray: lighten($drkgray, 50);
+$keycolor: hsla(161, 100%, 35%, 1);
+$drkblue: hsla(209, 53%, 52%, 1);
+$litblue: lighten($drkblue, 10);
+$white: hsla(0, 0%, 100%, 1);
+$black: hsla(223, 13%, 27%, 1);
+
+%clearfix {
+    &::before, &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    background-color: transparentize($litgray, .70);
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+h1 {
+    margin: 0;
+    font-weight: 300;
+}
+h3 {
+	display: inline-block;
+	margin-left: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    &.btn-info {
+        background-color: $gray;
+        padding: 15px 30px;
+    }
+    &.btn-signup {
+    	color: $white;
+        background-color: $drkgray;
+    }
+}
+header {
+	background-color: $white;
+    nav {
+    	margin-bottom: 100px;
+        @extend %clearfix;
+        h1 {
+            float: left;
+            line-height: 3em;
+            font-size: 1em;
+        }
+        ul {
+            float: right;
+        }
+        li {
+            display: inline-block;
+            line-height: 3em;
+            font-size: 1em;
+            a {
+            	color: transparentize($drkgray, .50);
+                transition: color 200ms ease-in-out;
+                &:hover {
+                    color: $keycolor;
+                }
+            }
+        }
+    }
+}
+main {
+	background-color: $white;
+	margin: 0 5% 8%;
+	border-radius: 10px;
+	padding-bottom: 25px;
+	h1 {
+		padding-top: 50px;
+		text-align: center;
+		color: $drkgray;
+		font-weight: 700;
+	}
+	section > p {
+		padding-top: 25px;
+		text-align: center;
+		color: $gray;
+	}
+	#none {
+		img {
+			display: block;
+			width: 90%;
+			margin: 50px auto;
+			border-radius: 10px;
+		}
+		p {
+			display: block;
+			width: 90%;
+			margin: 30px auto;
+			line-height: 1.7;
+			color: $gray;
+		}
+	}
+}
+
+
+// FOOTER styles start
+footer {
+	background-color: $drkgray;
+	color: $white;
+	padding: 75px 0;
+	div {
+		width: 30%;
+		float: left;
+		margin: 0 5% 75px 0;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+	>p {
+		width: 100%;
+		clear: both;
+		margin: 50px 0;
+	}
+}
+@media screen and (max-width: 766px) {
+	footer {
+		div{
+			width: 100%;
+			float: none;
+		}
+	}
+}
+// FOOTER styles end

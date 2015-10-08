@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+header nav::before, header nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  margin: 0;
+  background-color: rgba(207, 210, 216, 0.3);
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h3 {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btn.btn-info {
+  background-color: #636979;
+  padding: 15px 30px;
+}
+.btn.btn-signup {
+  color: white;
+  background-color: #4c515d;
+}
+
+header {
+  background-color: white;
+}
+header nav {
+  margin-bottom: 100px;
+}
+header nav h1 {
+  float: left;
+  line-height: 3em;
+  font-size: 1em;
+}
+header nav ul {
+  float: right;
+}
+header nav li {
+  display: inline-block;
+  line-height: 3em;
+  font-size: 1em;
+}
+header nav li a {
+  color: rgba(76, 81, 93, 0.5);
+  transition: color 200ms ease-in-out;
+}
+header nav li a:hover {
+  color: #00b37a;
+}
+
+main {
+  background-color: white;
+  margin: 0 5% 8%;
+  border-radius: 10px;
+  padding-bottom: 25px;
+}
+main h1 {
+  padding-top: 50px;
+  text-align: center;
+  color: #4c515d;
+  font-weight: 700;
+}
+main section > p {
+  padding-top: 25px;
+  text-align: center;
+  color: #636979;
+}
+main #none img {
+  display: block;
+  width: 90%;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+main #none p {
+  display: block;
+  width: 90%;
+  margin: 30px auto;
+  line-height: 1.7;
+  color: #636979;
+}
+
+footer {
+  background-color: #4c515d;
+  color: white;
+  padding: 75px 0;
+}
+footer div {
+  width: 30%;
+  float: left;
+  margin: 0 5% 75px 0;
+}
+footer div:last-of-type {
+  margin-right: 0;
+}
+footer > p {
+  width: 100%;
+  clear: both;
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 766px) {
+  footer div {
+    width: 100%;
+    float: none;
+  }
+}
