@@ -1,0 +1,190 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+%clearfix {
+	&::before, &::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.floats {
+	.util-nav {
+		@extend %clearfix;
+		background-image: url(../img/patt1.png);
+		h1 {
+			color: $logo;
+			float: left;
+			margin-bottom: 0;
+		}
+		ul{
+			float: right;
+		}
+		li {
+			display: inline-block;
+			float: left;
+			i {
+				margin: 0 10px;
+				float: left;
+				font-size: 2em;
+				color: $comp;
+			}
+			div {
+				float: left;
+			}
+		}
+	}
+	nav {
+		background-color: $black;
+		color: $white;
+		li {
+			display: inline-block;
+			font-size: 1.1em;
+			font-weight: 100;
+			text-transform: uppercase;
+			&:hover {
+				background-color: $key;
+			}
+			a{
+				display: block;
+				padding: 25px 30px;
+			}
+		}
+	}
+	.cta {
+		color: $white;
+		background: {
+			image: url(../img/page-1_slide2.jpg);
+			size: cover;
+			position: center;
+		}
+		padding: 100px 0;
+		text-align: center;
+		h2 {
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+	}
+	&.promos {
+		@extend %clearfix;
+		padding: 75px 5vw;
+		div {
+			width: 25%;
+			float: left;
+		}
+	}
+	&.features {
+		@extend %clearfix;
+		padding: 75px 5vw;
+		text-align: center;
+		div {
+			width: 33.3333%;
+			float: left;
+			i {
+				color: $comp;
+				font-size: 3em;
+				width: 3em;
+				height: 3em;
+				border: 1px solid $comp;
+				border-radius: 50%;
+				line-height: 3em;
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+
+.flex {
+	.util-nav {
+		background-image: url(../img/patt1.png);
+		display: flex;
+		h1 {
+			color: $logo;
+			margin-bottom: 0;
+			margin-right: auto;
+		}
+		ul {
+			display: flex;
+		}
+		li {
+			display: inline-flex;
+			i {
+				margin: 0 10px;
+				font-size: 2em;
+				color: $comp;
+			}
+		}
+	}
+	nav {
+		background-color: $black;
+		color: $white;
+		ul {
+			display: inline-flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			width: 100%;
+			li {
+				text-align: center;
+				font-size: 1.1em;
+				font-weight: 100;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $key;
+				}
+			a{
+				display: block;
+				padding: 25px 30px;
+				}
+			}
+		}
+	}
+	.cta {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 25vw;
+		color: $white;
+		background: {
+			image: url(../img/page-1_slide2.jpg);
+			size: cover;
+			position: center;
+		}
+		h2 {
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+	}
+	&.promos {
+		display: flex;
+		justify-content: center;
+		padding: 75px 0;
+		div {
+			width: 20%;
+		}
+	}
+	&.features {
+		display: flex;
+		justify-content: center;
+		padding: 75px 0;
+		text-align: center;
+		div {
+			width: 30%;
+			i {
+				// display: inline-flex;
+				// justify-content: center;
+				// align-items: center;
+				line-height: 3em;
+				color: $comp;
+				font-size: 3em;
+				width: 3em;
+				height: 3em;
+				border: 1px solid $comp;
+				border-radius: 50%;
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
