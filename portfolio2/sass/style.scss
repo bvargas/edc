@@ -1,0 +1,212 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+@import url(https://fonts.googleapis.com/css?family=Playball|Playfair+Display:400italic);
+
+$albums: assembly autonomy barbedflower colorized iridium lawncare monochromed music twitter;
+header {
+	background-color: transparentize($green, .3);
+	.nav {
+		display: flex;
+		background-color: $drkmagenta;
+		width: 100%;
+		h1 {
+			flex: 2;
+			margin: 1%;
+			color: white;
+			font-family: 'Playball', cursive;
+		}
+		ul {
+			display: inline-flex;
+			li {
+				padding: 10px 30px;
+				font-size: 1.5em;
+				font-family: 'Playfair Display', serif;
+				a {
+					color: white;
+					&:hover {
+						color: $green;
+						display: block;
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+	}
+	.heading {
+		text-align: center;
+		color: $magenta;
+		h1 {
+			font-family: 'Playball', cursive;
+		}
+		img {
+			border-radius: 50%;
+			width: 30%;
+			display: block;
+			margin: 50px auto;
+		}
+		h4 {
+			display: inline-flex;
+			justify-content: space-between;
+			padding: 0 20px;
+			margin-bottom: 50px;
+			font-family: 'Playfair Display', serif;
+		}
+	}
+}
+#portfolio {
+	text-align: center;
+	width: 100%;
+	h1 {
+		color: $green;
+		margin-top: 50px;
+		font-family: 'Playball', cursive;
+	}
+	.pics {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 20px 0;
+		@each $album in $albums {
+            $i: index($albums, $album);
+            div:nth-of-type(#{$i}){
+                background-image: url("../img/album-#{$album}.jpg");
+            }
+        }
+        div {
+        	width: 25%;
+        	height: 175px;
+        	margin: 15px;
+        	background-size: cover;
+        	background-position: center;
+        	background-repeat: no-repeat;
+        	a {
+        		display: flex;
+        		width: 100%;
+        		justify-content: center;
+        		font-size: 1.2em;
+        		text-transform: uppercase;
+        		color: $green;
+        		background-color: $drkmagenta;
+        	}
+        }
+	}
+}
+
+#about {
+	text-align: center;
+	background-color: transparentize($green, .3);
+	h1 {
+		color: $magenta;
+		padding-top: 50px;
+		font-family: 'Playball', cursive;
+	}
+	div {
+		display: flex;
+		width: 100%;
+		p {
+			display: block;
+			margin: 1% auto;
+			padding: 20px;
+			text-align: left;
+		}
+	}
+}
+#contact {
+	text-align: center;
+	margin-top: 50px;
+	h1 {
+		color: $green;
+		font-family: 'Playball', cursive;
+	}
+	div {
+		display: flex;
+		justify-content: space-around;
+		address {
+			padding: 20px;
+			flex: 1;
+			i {
+				width: 2em;
+				height: 2em;
+				line-height: 2em;
+				color: $magenta;
+				font-size: 2em;
+				border-radius: 50%;
+				margin-bottom: 20px;
+				border: 2px solid $green;
+			}
+		}
+	}
+}
+footer {
+	background-color: $drkmagenta;
+	color: white;
+	text-align: center;
+	p {
+		padding: 10px;
+	}
+	div {
+		background-color: $magenta;
+		color: $green;
+		padding: 20px;
+		ul {
+			display: inline-flex;
+			li {
+				padding: 0 20px;
+				a {
+					color: $green;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 766px){
+	header {
+		h1 {
+			padding: 20px 20px 0;
+		}
+		.nav {
+			ul {
+				display: block;
+				li {
+					padding: 0;
+				}
+			}
+		}
+	}
+	#portfolio {
+		.pics {
+			@each $album in $albums {
+            	$i: index($albums, $album);
+            	div:nth-of-type(#{$i}){
+                	background-image: none;
+           	 	}
+           	 	div {
+           	 		height: auto;
+           	 		width: 100%;
+           	 		margin: 5px;
+           	 		a {
+           	 			display: block;
+           	 			font-size: 1em;
+						background-color: transparent;
+           	 		}
+           	 	}
+       		}
+		}
+	}
+	#about {
+		div{display: block;
+			width: 100%;
+			p {
+			}
+		}
+	}
+	#contact {
+		div {
+			display: block;
+		}
+	}
+}

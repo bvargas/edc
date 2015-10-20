@@ -1,11 +1,11 @@
-/*@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,700%7CPlayfair+Display:400,700);*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,700%7CPlayfair+Display:400,700);
 body {
   margin: 20px;
-/*  font-family: 'Roboto', sans-serif;
-  font-weight: 300;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-/*strong {
+strong {
   font-family: inherit;
   font-weight: 700;
 }
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
 }
-*/
+
 main {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,39 +58,39 @@ main .stats-wrap {
           flex: 2;
 }
 
-/*.bio img {
+.bio img {
   width: 75%;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
   padding: 10px;
   border: 1px solid lightgray;
-}*/
-/*@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 991px) {
   .bio .img-lg {
     display: none;
   }
   .bio .img-sm {
     display: block;
   }
-}*/
-/*@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 992px) {
   .bio .img-lg {
     display: block;
   }
   .bio .img-sm {
     display: none;
   }
-}*/
-/*.bio blockquote {
+}
+.bio blockquote {
   font-size: 1.25em;
   font-style: italic;
   padding: 1em 2em;
   margin: 50px 0;
   border-left: 2px solid lightgray;
   position: relative;
-}*/
-/*.bio blockquote::before {
+}
+.bio blockquote::before {
   content: '\201C';
   font-family: 'Playfair Display', serif;
   font-style: normal;
@@ -98,7 +98,7 @@ main .stats-wrap {
   position: absolute;
   top: -.5em;
   left: 0;
-}*/
+}
 .bio .album-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -179,7 +179,7 @@ main .stats-wrap {
   background-repeat: no-repeat;
 }
 
-/*.stats-graph {
+.stats-graph {
   background-color: rgba(122, 163, 184, 0.25);
   padding: 20px;
 }
@@ -284,52 +284,52 @@ main .stats-wrap {
   background-repeat: no-repeat;
 }
 .stats-graph div:nth-of-type(1) span {
-  width: calc(61% - 55px);
-  background-color: #32cd37;
+  width: calc(57% - 55px);
+  background-color: #45c837;
 }
 .stats-graph div:nth-of-type(2) span {
-  width: calc(119% - 55px);
-  background-color: #0009ff;
-}
-.stats-graph div:nth-of-type(3) span {
-  width: calc(40% - 55px);
-  background-color: #91b34d;
-}
-.stats-graph div:nth-of-type(4) span {
   width: calc(52% - 55px);
   background-color: #61c23d;
 }
+.stats-graph div:nth-of-type(3) span {
+  width: calc(39% - 55px);
+  background-color: #93b14e;
+}
+.stats-graph div:nth-of-type(4) span {
+  width: calc(45% - 55px);
+  background-color: #80b946;
+}
 .stats-graph div:nth-of-type(5) span {
-  width: calc(119% - 55px);
-  background-color: #0009ff;
+  width: calc(41% - 55px);
+  background-color: #8db44b;
 }
 .stats-graph div:nth-of-type(6) span {
-  width: calc(91% - 55px);
-  background-color: #0becf4;
+  width: calc(59% - 55px);
+  background-color: #39cb34;
 }
 .stats-graph div:nth-of-type(7) span {
-  width: calc(88% - 55px);
-  background-color: #0ff0e1;
-}
-.stats-graph div:nth-of-type(8) span {
-  width: calc(87% - 55px);
-  background-color: #11eed8;
-}
-.stats-graph div:nth-of-type(9) span {
-  width: calc(34% - 55px);
-  background-color: #9fab54;
-}
-.stats-graph div:nth-of-type(10) span {
   width: calc(27% - 55px);
   background-color: #a29b5d;
 }
+.stats-graph div:nth-of-type(8) span {
+  width: calc(42% - 55px);
+  background-color: #8ab54a;
+}
+.stats-graph div:nth-of-type(9) span {
+  width: calc(45% - 55px);
+  background-color: #80b946;
+}
+.stats-graph div:nth-of-type(10) span {
+  width: calc(29% - 55px);
+  background-color: #a4a25b;
+}
 .stats-graph div:nth-of-type(11) span {
-  width: calc(24% - 55px);
-  background-color: #9e9261;
+  width: calc(96% - 55px);
+  background-color: #05c9fa;
 }
 .stats-graph div:nth-of-type(12) span {
-  width: calc(55% - 55px);
-  background-color: #51c639;
+  width: calc(42% - 55px);
+  background-color: #8ab54a;
 }
 .stats-graph span {
   display: -webkit-flex;
@@ -346,7 +346,7 @@ main .stats-wrap {
   padding: 0 10px;
   font-family: "Playfair Display", serif;
   color: white;
-}*/
+}
 
 .stats-deets ul {
   display: -webkit-flex;
