@@ -1,0 +1,15 @@
+@import "layout";
+
+main {
+	padding: 70px;
+	p{
+		color: lighten(hsla(0, 0%, 30%, 1), 10);
+		line-height: 2;
+	}
+}
+@media screen and (max-width: 766px){
+	main {
+		width: 100%;
+		padding: 0
+	}
+}

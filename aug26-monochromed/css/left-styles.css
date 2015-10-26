@@ -67,8 +67,6 @@ header h1, header h3 {
   text-transform: uppercase;
 }
 header h1 {
-  padding-top: 25px;
-  margin-top: 50px;
   font-size: 50px;
   color: #323339;
   margin-bottom: 0;
@@ -76,13 +74,12 @@ header h1 {
 header h3 {
   margin-top: 0;
   color: #8e8588;
-  padding-bottom: 50px;
 }
 header nav {
   width: 70%;
   text-align: center;
   margin-left: 15%;
-  padding-bottom: 80px;
+  padding-bottom: 150px;
 }
 header nav ul {
   background-color: #121212;

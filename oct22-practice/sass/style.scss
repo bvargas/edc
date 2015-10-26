@@ -1,0 +1,69 @@
+@import "variables";
+@import "reset";
+@import "each";
+// @import "fontawesome";
+
+$character-list: starlord gamora drax rocket groot ronan nebula korath;
+
+/* sass goes here */
+
+@each $character in $character-list{
+	$i: index($character-list, $character);
+	.characters div:nth-child(#{$i}){
+		&::before {
+			content: "#{$character}";
+		}
+	}
+}
+
+nav {
+    padding-top: 10vw;
+    background: {
+        image: url("../img/guardians.jpg");
+        position: cover;
+        size: cover;
+    }
+    h1 {
+        text-align: center;
+        font-size: 4em;
+        margin-bottom: 10vw;
+    }
+    a {
+        color: white;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        a {
+            display: block;
+            padding: 20px;
+        }
+    }
+}
+main {
+    .characters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img {
+        width: 25%;
+        height: auto;
+        float: left;
+    }
+    div {
+        box-sizing: border-box;
+        width: 50%;
+        padding: 20px;
+    }
+    div:nth-child(3n+1){
+        background-color: hsla(0, 0%, 0%, .05);
+        width: 100%;
+    }
+    div:nth-child(3n+2){
+        border-right: 1px solid hsla(0, 0%, 0%, .10);
+        img {
+            float: right;
+
+        }
+    }
+}

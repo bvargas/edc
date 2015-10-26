@@ -1,0 +1,75 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+%clearfix {
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+header {
+	nav {
+		display: flex;
+		h1 {
+			flex: 2;
+		}
+		ul {
+			display: inline-flex;
+			li {
+				padding: 5px 15px;
+			}
+		}
+	}
+	div {
+		background-image: url(../img/guardians.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 55vw;
+	}
+}
+.prof {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+	div {
+		@extend %clearfix;
+		box-sizing: border-box;
+		width: 50%;
+		padding: 20px;
+		img {
+			width: 50%;
+			height: auto;
+			float: right;
+		}
+	}
+}
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	.list {
+		flex: 2;
+		padding-top: 20px;
+		padding-left: 5%;
+	}
+}
+footer {
+	text-align: center;
+}
+
+@media screen and (max-width: 48em){
+	.prof div {
+		width: 33%;
+	}
+}
+@media screen and (max-width: 34em){
+	.prof {
+		display: block;
+		div {
+			width: 100%;
+		}
+	}
+}

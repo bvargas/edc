@@ -3,7 +3,7 @@ h1, h2, nav ul, button {
 }
 
 #header {
-  height: 75px;
+  margin: 0;
 }
 #header div {
   box-sizing: border-box;
@@ -12,9 +12,8 @@ h1, h2, nav ul, button {
   background-color: #db3d5f;
   background-image: url(../image/overlay.png);
   list-style: none;
-  height: 75px;
   padding-bottom: 0;
-  margin-top: 0;
+  margin: 0;
   padding-left: 30px;
   padding-top: 10px;
 }
@@ -27,7 +26,6 @@ h1, h2, nav ul, button {
 
 nav {
   background-color: #f8efce;
-  height: 50px;
   padding-top: 10px;
   padding-bottom: 25px;
 }
@@ -43,15 +41,6 @@ nav li {
 nav a {
   text-decoration: none;
   color: #db3d5f;
-}
-nav a button {
-  color: white;
-  text-transform: uppercase;
-  font-size: 18px;
-  background-color: #db3d5f;
-  border-radius: 25px;
-  height: 40px;
-  width: 150px;
 }
 
 #second {
@@ -112,7 +101,6 @@ footer {
   text-align: center;
   background-color: #1a1a1a;
   color: #999999;
-  height: 100px;
 }
 footer p {
   padding: 35px;
@@ -125,34 +113,63 @@ div.picture {
   background-size: cover;
 }
 
-@media screen and (max-width: 630px) {
-  nav li {
-    padding: 5px;
-    font-size: 15px;
+@media screen and (max-width: 766px) {
+  #header {
+    padding: 0;
   }
-  nav a button {
-    font-size: 15px;
-    width: 100px;
+  #header h1 {
+    text-align: center;
+    padding: 0;
+  }
+  #header h1 a {
+    font-size: 1em;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+  }
+  nav ul li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  nav ul li a {
+    padding: 0;
+    margin: 0;
   }
 
   #second {
-    padding: 15px;
+    display: block;
+    padding: 0 0 25px;
+    margin: 0;
   }
   #second div {
-    padding: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  #second div.col-6 {
+    width: 100%;
   }
   #second div.col-6 h1 {
-    font-size: 35px;
+    font-size: 2em;
+  }
+  #second div.col-6 img {
+    display: block;
+    margin: 0 auto;
   }
   #second div.col-9 {
-    padding: 0;
+    width: 100%;
+    margin: 0;
   }
-  #second div.col-9 i {
-    font-size: 10px;
-    border-bottom: none;
-  }
-  #second div.col-9 i a {
-    font-size: 12px;
+  #second div.col-9 ul {
+    margin: 0;
   }
 }
 main {
@@ -200,4 +217,21 @@ main h2 {
 }
 main p {
   color: #666666;
+}
+
+@media screen and (max-width: 766px) {
+  main {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  main div {
+    padding: 0;
+  }
+  main div.col3 {
+    width: 100%;
+  }
+  main div.col9 {
+    width: 100%;
+  }
 }

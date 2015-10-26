@@ -2656,19 +2656,19 @@ header .heading h4 {
   background-image: url("../img/album-colorized.jpg");
 }
 #portfolio .pics div:nth-of-type(5) {
-  background-image: url("../img/album-iridium.jpg");
+  background-image: url("../img/album-grandfloral.jpg");
 }
 #portfolio .pics div:nth-of-type(6) {
-  background-image: url("../img/album-lawncare.jpg");
+  background-image: url("../img/album-iridium.jpg");
 }
 #portfolio .pics div:nth-of-type(7) {
-  background-image: url("../img/album-monochromed.jpg");
+  background-image: url("../img/album-lawncare.jpg");
 }
 #portfolio .pics div:nth-of-type(8) {
-  background-image: url("../img/album-music.jpg");
+  background-image: url("../img/album-monochromed.jpg");
 }
 #portfolio .pics div:nth-of-type(9) {
-  background-image: url("../img/album-twitter.jpg");
+  background-image: url("../img/album-music.jpg");
 }
 #portfolio .pics div {
   width: 25%;

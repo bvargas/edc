@@ -3,22 +3,30 @@ var gulp = require('gulp'),
 	browserify = require('gulp-browserify'),
 	compass = require('gulp-compass'),
 	autoprefixer = require('gulp-autoprefixer'),
-	connect = require('gulp-connect');
+	plumber = require('gulp-plumber'),
+	browserSync = require('browser-sync').create();
 
 var htmlSources = ['*.html'];
-var scssSources = ['scss/*.scss'];
+var sassSources = ['sass/*.scss'];
 var jsSources = ['js/*.js'];
+
+var onError = function(err){
+	gutil.beep();
+	console.log(err);
+	this.emit('end');
+};
 
 gulp.task('html', function(){
 	gulp.src(htmlSources)
-		.pipe(connect.reload());
+		.pipe(browserSync.stream());
 });
 
 gulp.task('compass', function(){
-	gulp.src(scssSources)
+	gulp.src(sassSources)
+		.pipe(plumber({errorHandler: onError}))
 		.pipe(compass({
-			sass: 'scss/',
-			image: 'image/',
+			sass: 'sass/',
+			image: 'img/',
 			style: 'expanded'
 		}).on('error', gutil.log))
 		.pipe(autoprefixer({
@@ -26,35 +34,27 @@ gulp.task('compass', function(){
 			cascade: true
 		}))
 		.pipe(gulp.dest('css/'))
-		.pipe(connect.reload());
+		.pipe(browserSync.stream());
 });
 
 gulp.task('js', function(){
 	gulp.src(jsSources)
+		.pipe(plumber({errorHandler: onError}))
 		.pipe(browserify())
-		.pipe(connect.reload());
+		.pipe(browserSync.stream());
 });
 
-gulp.task('connect', function(){
-	connect.server({
-		root: '',
-		livereload: true
+gulp.task('serve', ['compass'], function(){
+	browserSync.init({
+		server: '',
+		notify: false
 	});
 });
 
 gulp.task('watch', function(){
-	gulp.watch(htmlSources, ['html']);
-	gulp.watch(scssSources, ['compass']);
+	gulp.watch(htmlSources, ['html']).on('change', browserSync.reload);
+	gulp.watch(sassSources, ['compass']);
 	gulp.watch(jsSources, ['js']);
 });
 
-gulp.task('default', ['watch', 'html', 'compass', 'js', 'connect']);
-
-
-
-
-
-
-
-
-
+gulp.task('default', ['watch', 'html', 'compass', 'js', 'serve']);

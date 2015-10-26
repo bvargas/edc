@@ -192,3 +192,98 @@ footer {
   font-size: 20px;
   padding: 50px;
 }
+
+@media screen and (max-width: 766px) {
+  .header nav {
+    padding: 0;
+  }
+  .header nav button {
+    background-color: transparent;
+  }
+  .header nav .navbar-header a:first-of-type {
+    font-size: 1.5em;
+  }
+
+  .text h1 {
+    padding: 0;
+    font-size: 2em;
+  }
+  .text h2 {
+    padding: 0;
+    font-size: 1.5em;
+  }
+  .text li {
+    padding: 0;
+  }
+
+  section h1 {
+    padding: 0;
+    font-size: 2em;
+  }
+  section h2 {
+    font-size: 1.5em;
+  }
+  section p {
+    margin: 0;
+  }
+  section li {
+    margin: 0;
+  }
+  section li button {
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+  }
+  main img {
+    width: 95%;
+    margin: 10px 5px 0;
+  }
+  main h1 {
+    padding: 0;
+    font-size: 2em;
+  }
+  main h2 {
+    font-size: 1.5em;
+  }
+  main p {
+    margin: 0;
+  }
+  main li {
+    margin: 0;
+  }
+  main li button {
+    margin: 0;
+  }
+
+  .end h1 {
+    padding: 0;
+    font-size: 2em;
+  }
+  .end h2 {
+    font-size: 1.5em;
+  }
+  .end li {
+    margin: 0;
+  }
+  .end li button {
+    margin: 0;
+  }
+  .end .square {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .end .square li {
+    display: block;
+    width: 90%;
+    margin: 0 auto 10px;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 0;
+    font-size: 1em;
+  }
+}

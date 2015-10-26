@@ -1,0 +1,174 @@
+@import "layout";
+/* index start */
+.banner {
+	margin: 0;
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 35vw;
+}
+#white {
+	display: flex;
+	margin: 40px 5%;
+	.one {
+		width: 25%;
+		img {
+			width: 85%;
+		}
+		dt {
+			text-align: left;
+			padding-top: 15px;
+		}
+		dd {
+			text-align: left;
+			margin-left: 0;
+			padding-right: 40px;
+		}
+	}
+}
+@media screen and (max-width: 766px){
+	#white {
+		display: block;
+		margin: 20px;
+		.one {
+			width: 100%;
+		}
+	}
+}
+/* index end */
+/*left and right and none start */
+.left-banner {
+	margin: 0;
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 15vw;
+}
+/* left and right and none end */
+/* left start */
+.left {
+	display: flex;
+	padding-bottom: 75px;
+	margin-top: 50px;
+	.aside {
+		width: 30%;
+		margin-left: 75px;
+		div {
+			width: 85%;
+			h1 {
+				font-size: 1.7em;
+			}
+		}
+	}
+	.section {
+		margin-right: 25px;
+		width: 65%;
+		img {
+			width: 100%;
+		}
+		p {
+			line-height: 1.5;
+		}
+	}
+}
+@media screen and (max-width: 766px){
+	.left {
+		display: block;
+		margin-top: 0;
+		.aside {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			margin: 0;
+			div {
+				width: 50%;
+				img {
+					width: 50%;
+				}
+			}
+		}
+		.section {
+			width: 100%;
+			img {
+				width: 95%;
+			}
+			p {
+				line-height: 1;
+			}
+		}
+	}
+}
+/*left end */
+/*right start */
+.right {
+	display: flex;
+	padding-bottom: 75px;
+	.section {
+		margin: 45px 25px;
+		width: 65%;
+		img {
+			width: 100%;
+		}
+		p {
+			line-height: 1.5;
+		}
+	}
+	.aside {
+		width: 30%;
+		margin-left: 75px;
+		margin-top: 55px;
+		div {
+			width: 85%;
+			h1 {
+				font-size: 1.7em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 766px){
+	.right {
+		display: block;
+		padding-bottom: 0;
+		.section {
+			width: 100%;
+			margin: 0;
+			img {
+				width: 95%;
+			}
+			p {
+				line-height: 1;
+			}
+		}
+		.aside {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			margin: 0;
+			div {
+				width: 50%;
+				img {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+/*right end */
+/*none start */
+.none {
+	padding: 50px;
+	p {
+		line-height: 1.5;
+	}
+}
+@media screen and (max-width: 766px){
+	.none {
+		padding: 0;
+		p {
+			line-height: 1;
+		}
+	}
+}
+/*none end */

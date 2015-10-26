@@ -8,8 +8,8 @@ ol {
 $items: 40
 $hue-val: (360 / $items);
 @for $i from 1 through $items {
-	$hue: ($hue-val * $1);
-	li:nth-of-type (#{$1}){
+	$hue: ($hue-val * $i);
+	li:nth-of-type (#{$i}){
 		&:hover {
 			background-image: linear-gradient
 		}
