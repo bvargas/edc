@@ -88,9 +88,6 @@ header nav ul {
   width: 100%;
 }
 header nav ul li {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   display: inline;
   text-transform: uppercase;
   font-size: 15px;

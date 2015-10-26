@@ -2796,6 +2796,9 @@ footer div ul li a {
     font-size: 1em;
     background-color: transparent;
   }
+  #portfolio .pics div a:hover {
+    color: #980641;
+  }
   #portfolio .pics div:nth-of-type(2) {
     background-image: none;
   }
@@ -2808,6 +2811,9 @@ footer div ul li a {
     display: block;
     font-size: 1em;
     background-color: transparent;
+  }
+  #portfolio .pics div a:hover {
+    color: #980641;
   }
   #portfolio .pics div:nth-of-type(3) {
     background-image: none;
@@ -2822,6 +2828,9 @@ footer div ul li a {
     font-size: 1em;
     background-color: transparent;
   }
+  #portfolio .pics div a:hover {
+    color: #980641;
+  }
   #portfolio .pics div:nth-of-type(4) {
     background-image: none;
   }
@@ -2834,6 +2843,9 @@ footer div ul li a {
     display: block;
     font-size: 1em;
     background-color: transparent;
+  }
+  #portfolio .pics div a:hover {
+    color: #980641;
   }
   #portfolio .pics div:nth-of-type(5) {
     background-image: none;
@@ -2848,6 +2860,9 @@ footer div ul li a {
     font-size: 1em;
     background-color: transparent;
   }
+  #portfolio .pics div a:hover {
+    color: #980641;
+  }
   #portfolio .pics div:nth-of-type(6) {
     background-image: none;
   }
@@ -2860,6 +2875,9 @@ footer div ul li a {
     display: block;
     font-size: 1em;
     background-color: transparent;
+  }
+  #portfolio .pics div a:hover {
+    color: #980641;
   }
   #portfolio .pics div:nth-of-type(7) {
     background-image: none;
@@ -2874,6 +2892,9 @@ footer div ul li a {
     font-size: 1em;
     background-color: transparent;
   }
+  #portfolio .pics div a:hover {
+    color: #980641;
+  }
   #portfolio .pics div:nth-of-type(8) {
     background-image: none;
   }
@@ -2886,6 +2907,9 @@ footer div ul li a {
     display: block;
     font-size: 1em;
     background-color: transparent;
+  }
+  #portfolio .pics div a:hover {
+    color: #980641;
   }
   #portfolio .pics div:nth-of-type(9) {
     background-image: none;
@@ -2900,10 +2924,16 @@ footer div ul li a {
     font-size: 1em;
     background-color: transparent;
   }
+  #portfolio .pics div a:hover {
+    color: #980641;
+  }
 
   #about div {
     display: block;
     width: 100%;
+  }
+  #about div p {
+    padding: 5px;
   }
 
   #contact div {

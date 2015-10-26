@@ -193,6 +193,9 @@ footer {
            	 			display: block;
            	 			font-size: 1em;
 						background-color: transparent;
+						&:hover {
+							color: $drkmagenta;
+						}
            	 		}
            	 	}
        		}
@@ -202,6 +205,7 @@ footer {
 		div{display: block;
 			width: 100%;
 			p {
+				padding: 5px;
 			}
 		}
 	}
