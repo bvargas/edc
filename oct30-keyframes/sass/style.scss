@@ -1,0 +1,108 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+html, body {
+	height: 100%;
+}
+main {
+	background-color: $bg-clr;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	div:first-child {
+		$litesize: 5vw;
+		display: flex;
+		flex-direction: column;
+		background-color: $lite-clr;
+		border-radius: $litesize / 8;
+		padding: $litesize / 4;
+		margin: $litesize;
+		border: 2px solid $bdr;
+		span {
+			display: block;
+			width: $litesize;
+			height: $litesize;
+			background-color: $slow;
+			border-radius: 100%;
+			border: inherit;
+			margin: $litesize / 4;
+			&:first-child {
+				background-color: $stop;
+				&.lit, &:hover {
+					background-color: lighten($stop, 20);
+				}
+			}
+			&:last-child {
+				background-color: $go;
+				&.lit, &:hover {
+					background-color: lighten($go, 20);
+				}
+			}
+			&.lit, &:hover {
+				background-color: lighten($slow, 20);
+				cursor: pointer;
+			}
+		}
+	}
+	div:last-child {
+		$imgsize: 12vw;
+		width: $imgsize;
+		height: $imgsize * 2.22222;
+		margin: 5vw;
+		background: {
+			// image: url(../img/walk1.gif);
+			position: center;
+			repeat: no-repeat;
+			size: cover;
+		}
+		animation: {
+			name: walk;
+			duration: .75s;
+			iteration-count: infinite;
+			timing-function: ease;
+		}
+	}
+}
+@keyframes walk {
+	$perckey: 100 / 9;
+	@for $i from 1 through 9 {
+		$perc: $perckey * $i;
+		#{$perc}% {
+			background-image: url(../img/walk#{$i}.gif);
+		}
+	}
+	// 0% {
+	// 	background-image: url(../img/walk1.gif);
+	// }
+}
+/* @keyframes walk {
+	0% {
+		border: 1px solid aquamarine;
+	}
+	12.5% {
+		border: 5px solid violet;
+	}
+	25% {
+		border: 10px solid slategray;
+	}
+	37.5% {
+		border: 15px solid darkmagenta;
+	}
+	50% {
+		border: 20px solid crimson;
+	}
+	62.5% {
+		border: 15px solid deepskyblue;
+	}
+	75% {
+		border: 10px solid springgreen;
+	}
+	87.5% {
+		border: 5px solid thistle;
+	}
+	100% {
+		border: 1px solid lavenderblush;
+	}
+} */

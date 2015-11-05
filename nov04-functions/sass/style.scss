@@ -1,0 +1,62 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/*  Project 1
+
+html, body {
+	height: 100%;
+} */
+
+/* Project 2
+form {
+	background-color: silver;
+	padding: 20px;
+	div {
+		margin: 15px;
+		&:first-of-type{
+			input{
+				width: 24.5%;
+			}
+		}
+		&:nth-of-type(2){
+			input {
+				width: 50%;
+			}
+		}
+	}
+	label {
+		margin: 15px;
+		input {
+			width: 10%;
+		}
+	}
+} */
+
+// project 3
+form {
+	background-color: silver;
+	padding: 20px;
+	div {
+		margin: 10px;
+		&:first-of-type{
+			input{
+				width: 24.5%;
+			}
+		}
+		&:nth-of-type(2){
+			input {
+				width: 50%;
+			}
+		}
+		input {
+			margin: 5px;
+		}
+	}
+	label {
+		margin: 15px;
+		input {
+			width: 10%;
+		}
+	}
+}
