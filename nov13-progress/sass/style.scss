@@ -1,0 +1,102 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+body {
+	font: {
+		family: sans-serif;
+		size: 100%;
+		weight: 200;
+	}
+	padding: 10vw 5vw;
+	background-color: $white;
+	color: $black;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 400;
+}
+
+header {
+	background-color: $black;
+	color: $white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	nav {
+		display: flex;
+		position: relative;
+		h1, ul, li, a {display: inherit;}
+		h1 {margin: 0 auto 0 0;}
+		a {
+			align-items: center;
+			padding: 10px;
+		}
+	}
+	#progressBar {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 3px;
+		width: 0%;
+		background-color: orchid;
+		transition: width 100ms linear;
+	}
+}
+
+main {
+	background-color: darken($white, 3);
+	.main-content {
+		padding: 10vw 5vw;
+	}
+}
+
+section {
+	padding: 10vw 5vw;
+	background-color: darken($white, 10);
+	.animWrap {
+		display: flex;
+		img {
+			box-sizing: border-box;
+			width: 100%;
+			height: auto;
+			padding: 10px;
+			background-color: $white;
+			border: 1px solid darken($white, 20);
+		}
+		div {padding: 10px;}
+		div:first-child {flex: 1;}
+		div:last-child {flex: 2;}
+	}
+	&:nth-of-type(even){
+		.animWrap {
+			div:first-child {
+				flex: 2;
+			}
+			div:last-child {
+				flex: 1;
+			}
+		}
+	}
+}
+
+#comments {
+	li {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 5vw;
+		padding: 5vw 0;
+		border-bottom: 1px solid darken($white, 20);
+		&:last-child {
+			border: none;
+		}
+		img {
+			flex: none;
+			border-radius: 100%;	
+			margin-right: 10px;
+		}
+	}
+}

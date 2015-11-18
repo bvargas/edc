@@ -1,0 +1,11 @@
+{
+  "name": "nov05-vetting",
+  "version": "1.0.0",
+  "description": "All files but package.json included in template.\r Follow instructions for new projects:",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -4,7 +4,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Playball|Playfair+Display:400italic);
 
-$albums: assembly autonomy barbedflower colorized grandfloral iridium lawncare monochromed music;
+$albums: assembly autonomy barbedflower colorized form grandfloral maze music typing;
 
 header {
 	background-color: transparentize($green, .3);
@@ -75,15 +75,14 @@ header {
             $i: index($albums, $album);
             div:nth-of-type(#{$i}){
                 background-image: url("../img/album-#{$album}.jpg");
+                background-size: cover;
+                background-position: center;
             }
         }
         div {
         	width: 25%;
         	height: 175px;
         	margin: 15px;
-        	background-size: cover;
-        	background-position: center;
-        	background-repeat: no-repeat;
         	a {
         		display: flex;
         		width: 100%;
@@ -159,6 +158,11 @@ footer {
 				padding: 0 20px;
 				a {
 					color: $green;
+					transition: all 200ms ease-in-out;
+					&:hover {
+						color: white;
+						font-size: 30px;
+					}
 				}
 			}
 		}

@@ -1,0 +1,45 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+html, body {
+	height: 100%;
+}
+#loginBox {
+	background-image: url(http://cdn.desktopwallpapers4.me/wallpapers/space/1920x1080/2/13391-capricorn-nebula-1920x1080-space-wallpaper.jpg);
+	background-size: cover;
+	padding: 50px;
+	width: 300px;
+	border-radius: 10px;
+	form {
+		display: flex;
+		flex-direction: column;
+		.button{
+			align-self: flex-start;
+			background-color: orchid;
+			color: indigo;
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+			span {
+				color: lavenderblush;
+			}
+		}
+		input {
+			font-size: 1.25em;
+			line-height: 1.5;
+			background-color: mistyrose;
+			border: {
+				width: 1px;
+				style: solid;
+				color: lightgray;
+				radius: 4px;
+			}
+		}
+		small{
+			color: red;
+		}
+	}
+}
