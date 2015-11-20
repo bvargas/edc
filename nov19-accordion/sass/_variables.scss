@@ -1,0 +1,5 @@
+$white: hsla(0, 0%, 96%, 1);
+$black: hsla(0, 0%, 9%, 1);
+$key: hsla(244, 14%, 21%, 1);
+$keylite: lighten($key, 10);
+$keydark: darken($key, 10);
