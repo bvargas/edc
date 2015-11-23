@@ -7,8 +7,6 @@ var badges = document.querySelectorAll('.guess .thumbs img');
 var strayCats = 0;
 var kittyPic = '<img src="img/kitten.png" alt="">';
 
-// litterBox.innerHTML = kittyPic;
-
 submitBtn.addEventListener('click', submitGuess);
 resetBtn.addEventListener('click', clearGame);
 
@@ -22,7 +20,7 @@ function startGame(){
 startGame();
 
 function submitGuess(evt){
-	// evt.preventDefault();
+	evt.preventDefault();
 	var guess = guessBox.value;
 	guessBox.disabled = true;
 	checkGame(guess);
