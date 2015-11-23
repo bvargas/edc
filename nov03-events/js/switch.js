@@ -1,4 +1,4 @@
-var selectOpt0 = document.getElementsByTagName('select')[0],
+/*var selectOpt0 = document.getElementsByTagName('select')[0],
 	paraObj0= document.getElementsByTagName('p')[0];
 	
 selectOpt0.addEventListener('change', function (){
@@ -83,3 +83,4 @@ selectOpt1.addEventListener('change', function (){
 function popup(x){
 	alert(x);
 };
+*/

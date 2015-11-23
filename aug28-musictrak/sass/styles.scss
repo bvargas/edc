@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,700%7CPlayfair+Display:400,700);
+/* put your scss here */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,700|Playfair+Display:400,700);
 
 $albums: adele ariana-grande bastille beyonce bruno-mars coldplay dmx guns-n-roses katy-perry mariah-carey misfits moby notorious-big offspring outkast pink-floyd sia stone-temple-pilots sublime weezer;
 $users: angie brianne claire franklin gary genie jacob jonathan phillip rebecca shaun tessa;
@@ -15,11 +17,11 @@ strong {
 }
 // $headings: 6 5 4 3 2 1;
 // @each $heading in $headings {
-//     $i: index($headings, $heading);
-//     h#{$i}{
-//         $size: $heading * 3 * .1;
-//         font-size: $size * 1em;
-//     }
+//  $i: index($headings, $heading);
+//  h#{$i}{
+//      $size: $heading * 3 * .1;
+//      font-size: $size * 1em;
+//  }
 // }
 
 $hstart: 3em;
@@ -31,13 +33,14 @@ $hstart: 3em;
 }
 
 //@for $i from 1 through 6 {
-//    h#{$i}{
-//        font-size: (3 / $i * 1em);
-//    }
+//  h#{$i}{
+//      font-size: (3 / $i * 1em);
+//  }
 //}
 
 
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3, , h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
 }
@@ -95,7 +98,7 @@ main {
         @each $album in $albums {
             $i: index($albums, $album);
             div:nth-of-type(#{$i}){
-                background-image: url("../image/album-#{$album}.jpg");
+                background-image: url('../img/album-#{$album}.jpg');
             }
         }
         div {
@@ -130,7 +133,7 @@ main {
     @each $user in $users {
         $i: index($users, $user);
         div:nth-of-type(#{$i})::before {
-            background-image: url('../image/user-#{$user}.jpg');
+            background-image: url('../img/user-#{$user}.jpg');
         }
         div:nth-of-type(#{$i}) span::before {
             content: '#{$user}';
@@ -177,7 +180,7 @@ main {
         flex-wrap: no-wrap;
         list-style: none;
         padding: 0;
-        overflow: auto;
+        overflow: hidden;
         width: 100%;
     }
     li {
@@ -188,7 +191,7 @@ main {
     @each $album in $albums {
         $i: index($albums, $album);
         li:nth-of-type(#{$i}) div {
-            background-image: url('../image/album-#{$album}.jpg');
+            background-image: url('../img/album-#{$album}.jpg');
         }
     }
     div {
@@ -201,4 +204,8 @@ main {
         }
     }
 }
+
+
+
+
 

@@ -1,0 +1,44 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+header {
+	background-color: orchid;
+	nav {
+		display: flex;
+		h1 {
+			flex: 1;
+			text-transform: uppercase;
+		}
+		ul {
+			display: flex;
+			flex: 2;
+			color: teal;
+			text-transform: uppercase;
+			li {
+				padding: 25px 10px 0;
+				position: relative;
+			}
+		}
+	}
+	form {
+		align-item: flex-end;
+		padding: 25px 10px 0;
+		text-transform: uppercase;
+		.button {
+			background-color: aqua;
+			color: blueviolet;
+		}
+	}
+}
+.drop {
+	ul {
+		display: block;
+		position: absolute;
+		color: springgreen;
+		margin-top: 0;
+		li {
+			padding: 0;
+		}
+	}
+}

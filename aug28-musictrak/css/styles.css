@@ -284,52 +284,52 @@ main .stats-wrap {
   background-repeat: no-repeat;
 }
 .stats-graph div:nth-of-type(1) span {
-  width: calc(57% - 55px);
-  background-color: #45c837;
+  width: calc(120% - 55px);
+  background-color: blue;
 }
 .stats-graph div:nth-of-type(2) span {
-  width: calc(52% - 55px);
-  background-color: #61c23d;
+  width: calc(24% - 55px);
+  background-color: #9e9261;
 }
 .stats-graph div:nth-of-type(3) span {
-  width: calc(39% - 55px);
-  background-color: #93b14e;
+  width: calc(88% - 55px);
+  background-color: #0ff0e1;
 }
 .stats-graph div:nth-of-type(4) span {
-  width: calc(45% - 55px);
-  background-color: #80b946;
+  width: calc(94% - 55px);
+  background-color: #08d7f7;
 }
 .stats-graph div:nth-of-type(5) span {
-  width: calc(41% - 55px);
-  background-color: #8db44b;
+  width: calc(97% - 55px);
+  background-color: #04c1fb;
 }
 .stats-graph div:nth-of-type(6) span {
-  width: calc(59% - 55px);
-  background-color: #39cb34;
+  width: calc(80% - 55px);
+  background-color: #1ae6a2;
 }
 .stats-graph div:nth-of-type(7) span {
-  width: calc(27% - 55px);
-  background-color: #a29b5d;
+  width: calc(97% - 55px);
+  background-color: #04c1fb;
 }
 .stats-graph div:nth-of-type(8) span {
-  width: calc(42% - 55px);
-  background-color: #8ab54a;
+  width: calc(119% - 55px);
+  background-color: #0009ff;
 }
 .stats-graph div:nth-of-type(9) span {
-  width: calc(45% - 55px);
-  background-color: #80b946;
+  width: calc(28% - 55px);
+  background-color: #a39e5c;
 }
 .stats-graph div:nth-of-type(10) span {
-  width: calc(29% - 55px);
-  background-color: #a4a25b;
+  width: calc(97% - 55px);
+  background-color: #04c1fb;
 }
 .stats-graph div:nth-of-type(11) span {
-  width: calc(96% - 55px);
-  background-color: #05c9fa;
+  width: calc(109% - 55px);
+  background-color: #005eff;
 }
 .stats-graph div:nth-of-type(12) span {
-  width: calc(42% - 55px);
-  background-color: #8ab54a;
+  width: calc(76% - 55px);
+  background-color: #1fe086;
 }
 .stats-graph span {
   display: -webkit-flex;
