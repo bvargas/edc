@@ -1,3 +1,107 @@
 @import "variables";
 @import "reset";
 @import "fontawesome";
+
+/* header {
+	background-image: url(../img/pic01.jpg);
+	background-size: cover;
+	color: white;
+	h2 {
+		padding-top: 100px;
+		text-align: center;
+		font-size: 2em;
+	}
+	nav {
+		margin: 0 auto;
+		padding-bottom: 75px;
+		ul {
+			display: flex;
+			justify-content: center;
+			font-size: em;
+			li {
+				padding: 0 30px;
+				font-size: 24px;
+			}
+			.dropDown ul{
+				display: none;
+			}
+		}
+	}
+	section {
+		text-align: center;
+		padding-bottom: 50px;
+		h1 {
+			font-size: 3.5em;
+		}
+		p {
+			font-size: 1.8em;
+			padding: 0 40px 25px;
+		}
+		button {
+			background-color: hsla(151, 57%, 46%, 1);;
+			padding: 10px 50px;
+			color: white;
+			font-size: 1.5em;
+			border-radius: 50px;
+			border: none;
+		}
+	}
+}
+main {
+	width: 100%;
+	.top {
+		padding-top: 100px;
+		h1, h3 {
+			text-align: center;
+		}
+		h1 {
+			font-size: 2.5em;
+			color: gray;
+			margin-bottom: 0;
+		}
+		h3 {
+			font-size: 1.5em;
+			color: silver;
+		}
+		.top1 {
+			box-sizing: border-box;
+			display: flex;
+			width: 100%;
+			div {
+				box-sizing: border-box;
+				width: 33.3333%;
+				justify-content: column;
+				padding: 20px;
+				img {
+					width: 100%;
+					height: auto;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+} */
+
+
+// project 2
+nav {
+	ul, li, a {
+		display: flex;
+	}
+	a {
+		padding: 10px;
+	}
+	.dropdown {
+		position: relative;
+		form, ul {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+		}
+		&.visible ul,
+		&.visible form {
+			display: block;
+		}
+	}
+}
