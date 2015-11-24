@@ -2576,6 +2576,15 @@ main div {
 main .kittens {
   margin-bottom: 20px;
 }
+main .kittens header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+main .kittens header h1 {
+  margin: 0 auto 0 0;
+}
 main .kittens div {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2598,10 +2607,13 @@ main .kittens div img {
   width: 50px;
   height: auto;
 }
+main .guess {
+  position: relative;
+}
 main .guess h3 {
   margin: 0;
 }
-main .guess div {
+main .guess .input {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2609,6 +2621,14 @@ main .guess div {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-main .guess div input[type="submit"] {
+main .guess .input input[type="submit"] {
   width: 30%;
+}
+main .guess .thumbs img {
+  display: none;
+  width: 125px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
