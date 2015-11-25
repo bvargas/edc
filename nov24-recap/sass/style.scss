@@ -1,3 +1,136 @@
 @import "variables";
 @import "reset";
 @import "fontawesome";
+
+header {
+	text-align: center;
+	background: {
+		image: url(../img/night-imgres.jpg);
+		size: cover;
+		position: center;
+	}
+	.toggle {
+		display: flex;
+		margin-bottom: 50px;
+		a, i{
+			font-size: 1.5em;
+			color: white;
+			margin: 0 0 0 auto;
+		}
+	}
+	.head {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 25px 0 75px;
+		text-align: center;
+		color: darkturquoise;
+		h1 {
+			font-size: 5em;
+			margin-bottom: 0;
+		}
+		p {
+			font-size: 2em;
+		}
+		button {
+			justify-content: center;
+			padding: 10px 50px;
+			border-radius: 50px;
+			font-size: 24px;
+			background-color: black;
+			color: lavender;
+			&:hover {
+				background-color: mediumseagreen;
+				color: purple;
+			}
+		}
+	}
+	nav {
+		background-color: darkmagenta;
+		ul {
+			display: flex;
+			justify-content: center;
+			li {
+				padding: 20px 40px;
+				&:hover{
+					background-color: black;
+				}
+				a {
+					font-size: 1.5em;
+					color: mediumseagreen;
+					&:hover {
+						color: lavenderblush;
+					}
+				}
+			}
+		}
+	}
+	.fixed {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+}
+main {
+	.one, .two, .three{
+		background-color: gainsboro;
+		padding-bottom: 50px;
+		.top {
+			width: 100%;
+			text-align: center;
+			box-sizing: border-box;
+			padding: 50px;
+			img {
+				width: 50vw;
+				padding-bottom: 50px;
+			}
+		}
+		.bottom {
+			display: flex;
+			div {
+				box-sizing: border-box;
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				img {
+					padding-top: 10px;
+					width: 15vw;
+				}
+			}
+		}
+	}
+	.one, .three {
+		background-color: lightsteelblue;
+		padding-top: 50px;
+	}
+}
+.daytheme{
+	header {
+		background-image: url(../img/day-header.jpg);
+		.toggle {
+			background-image: none;
+		}
+		.head {
+			color: black;
+		}
+		nav {
+		background-color: darkkhaki;
+		ul {
+			li a{
+				color: darkgoldenrod;
+			}
+		}
+		}
+	}
+	main {
+		.one, .two, .three {
+			background-color: lemonchiffon;
+		}
+		.two {
+			background-color: sandybrown;
+		}
+	}
+}
