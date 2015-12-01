@@ -1,10 +1,9 @@
 /*js goes here*/
 var socialMedia = {
-	facebook: 'https://www.facebook.com',
-	envelope: 'https://www.gmail.com',
-	linkedin: 'https://www.linkedin.com/',
-	github: 'https://github.com/',
-	slack: 'https://slack.com/'
+	twitter: 'https://twitter.com/Real_CSS_Tricks',
+	flickr: 'https://www.flickr.com/photos/zeldman/18658541431',
+	youtube: 'https://www.youtube.com/user/realcsstricks',
+	facebook: 'https://www.facebook.com/CSSTricks/'
 };
 
 var social = function(){
@@ -18,3 +17,21 @@ var social = function(){
 		smiList[i].innerHTML = output;
 	}	
 }(socialMedia);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function test(){
+	console.log(arguments[1]);
+}
+test(5, 10)*/

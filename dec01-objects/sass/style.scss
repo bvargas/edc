@@ -1,0 +1,51 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+body {
+	height: 100%;
+}
+header {
+	background-color: darkmagenta;
+	color: lightseagreen;
+	nav {
+		display: flex;
+		ul {
+			display: flex;
+			margin: 0 auto 0 0;
+			li {
+				padding: 5px;
+			}
+		}
+	}
+}
+main {
+	padding: 50px;
+}
+.smi {
+	li {
+		display: inline-block;
+		margin-right: 5px;
+		padding: 0;
+		i {
+			width: 25px;
+			height: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+			color: white;
+		}
+		i.fa-facebook {background-color: #3b5998}
+		i.fa-twitter {background-color: #55acee}
+		i.fa-flickr {background-color: #0063dc}
+		i.fa-youtube{background-color: #cd201f}
+	}
+}
+footer {
+	background-color: darkmagenta;
+	padding: 20px;
+	display: flex;
+	p {
+		margin: 0 auto 0 0;
+	}
+}
