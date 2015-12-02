@@ -41,6 +41,21 @@ main {
 		i.fa-youtube{background-color: #cd201f}
 	}
 }
+.gallery {
+	ul {
+		width: (100px * 5);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		li {
+			img {
+				display: flex;
+				width: 150px;
+				height: 150px;
+			}
+		}
+	}
+}
 footer {
 	background-color: darkmagenta;
 	padding: 20px;
