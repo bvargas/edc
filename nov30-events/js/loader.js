@@ -1,4 +1,4 @@
-var imgThm = document.querySelectorAll('img.thm');
+/*var imgThm = document.querySelectorAll('img.thm');
 var spanBtn = document.querySelector('.close');
 
 for (var i = 0; i < imgThm.length; i++){
@@ -29,3 +29,4 @@ function showHiRes(evt){
 }
 
 
+*/
