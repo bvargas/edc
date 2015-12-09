@@ -8,15 +8,21 @@ $albums: art assembly autonomy barbedflower colorized kitten form grandfloral lo
 
 header {
 	background-color: transparentize($green, .3);
+	padding-top: 50px;
 	.nav {
 		display: flex;
 		background-color: $drkmagenta;
 		width: 100%;
+		position: fixed;
+		top: 0;
 		h1 {
 			flex: 2;
 			margin: 1%;
 			color: white;
 			font-family: 'Playball', cursive;
+			&:hover {
+				color: $green;
+			}
 		}
 		ul {
 			display: inline-flex;
@@ -30,6 +36,7 @@ header {
 						color: $green;
 						display: block;
 						border-radius: 5px;
+						cursor: pointer;
 					}
 				}
 			}
@@ -76,7 +83,10 @@ header {
             div:nth-of-type(#{$i}){
                 background-image: url("../img/album-#{$album}.jpg");
                 background-size: cover;
-                background-position: fixed;
+                background-position: center;
+            }
+            div:first-of-type{
+            	background-position: top;
             }
         }
         div {
@@ -145,6 +155,8 @@ footer {
 	background-color: $drkmagenta;
 	color: white;
 	text-align: center;
+	margin: 0;
+	padding-bottom: 0;
 	p {
 		padding: 10px;
 	}
@@ -170,15 +182,34 @@ footer {
 }
 @media screen and (max-width: 766px){
 	header {
-		h1 {
-			padding: 20px 20px 0;
-		}
 		.nav {
+			display: flex;
+			flex-direction: column;
+			h1 {
+				padding: 0;
+				margin: 0;
+				font-size: 1.2em;
+			}
 			ul {
-				display: block;
+				display: inline-flex;
 				li {
-					padding: 0;
+					padding: 10px;
+					font-size: 1em;
 				}
+			}
+		}
+		.heading {
+			margin: 10px auto;
+			img {
+				margin: 25px auto;
+			}
+			h1 {
+				margin: 0;
+				padding: 0;
+			}
+			h4 {
+				margin-bottom: 10px;
+				padding: 0 5px;
 			}
 		}
 	}

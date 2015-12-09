@@ -18,3 +18,5 @@ var social = function(){
 		smiList[i].innerHTML = output;
 	}	
 }(socialMedia);
+
+

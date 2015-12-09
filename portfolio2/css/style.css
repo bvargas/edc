@@ -11,6 +11,7 @@ ul, ol {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -2559,6 +2560,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 header {
   background-color: rgba(13, 222, 96, 0.7);
+  padding-top: 50px;
 }
 header .nav {
   display: -webkit-flex;
@@ -2566,6 +2568,8 @@ header .nav {
   display: flex;
   background-color: #980641;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 header .nav h1 {
   -webkit-flex: 2;
@@ -2574,6 +2578,9 @@ header .nav h1 {
   margin: 1%;
   color: white;
   font-family: 'Playball', cursive;
+}
+header .nav h1:hover {
+  color: #0dde60;
 }
 header .nav ul {
   display: -webkit-inline-flex;
@@ -2592,6 +2599,7 @@ header .nav ul li a:hover {
   color: #0dde60;
   display: block;
   border-radius: 5px;
+  cursor: pointer;
 }
 header .heading {
   text-align: center;
@@ -2646,72 +2654,114 @@ header .heading h4 {
 #portfolio .pics div:nth-of-type(1) {
   background-image: url("../img/album-art.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(2) {
   background-image: url("../img/album-assembly.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(3) {
   background-image: url("../img/album-autonomy.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(4) {
   background-image: url("../img/album-barbedflower.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(5) {
   background-image: url("../img/album-colorized.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(6) {
   background-image: url("../img/album-kitten.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(7) {
   background-image: url("../img/album-form.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(8) {
   background-image: url("../img/album-grandfloral.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(9) {
   background-image: url("../img/album-loader.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(10) {
   background-image: url("../img/album-maze.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(11) {
   background-image: url("../img/album-music.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(12) {
   background-image: url("../img/album-lights.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(13) {
   background-image: url("../img/album-switch.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div:nth-of-type(14) {
   background-image: url("../img/album-typing.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
 }
 #portfolio .pics div {
   width: 25%;
@@ -2791,6 +2841,8 @@ footer {
   background-color: #980641;
   color: white;
   text-align: center;
+  margin: 0;
+  padding-bottom: 0;
 }
 footer p {
   padding: 10px;
@@ -2818,14 +2870,41 @@ footer div ul li a:hover {
 }
 
 @media screen and (max-width: 766px) {
-  header h1 {
-    padding: 20px 20px 0;
+  header .nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .nav h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
   }
   header .nav ul {
-    display: block;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   header .nav ul li {
+    padding: 10px;
+    font-size: 1em;
+  }
+  header .heading {
+    margin: 10px auto;
+  }
+  header .heading img {
+    margin: 25px auto;
+  }
+  header .heading h1 {
+    margin: 0;
     padding: 0;
+  }
+  header .heading h4 {
+    margin-bottom: 10px;
+    padding: 0 5px;
   }
 
   #portfolio .pics div:nth-of-type(1) {
