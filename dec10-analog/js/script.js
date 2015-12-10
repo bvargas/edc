@@ -15,9 +15,9 @@ function getTime(){
 	var thisMin = (thisYear.getMinutes() * aSec);
 	var thisSec = (thisYear.getSeconds() * aSec);
 	
-	secondHand.style.transform = 'translate3d(-50%, 0, 0) rotate('+thisSec+'deg)';
-	minuteHand.style.transform = 'translate3d(-50%, 0, 0) rotate('+thisMin+'deg)';
-	hourHand.style.transform = 'translate3d(-50%, 0, 0) rotate('+thisHour+'deg)';
+	secondHand.style.transform = 'translate3d(-24%, 0, 0) rotate('+thisSec+'deg)';
+	minuteHand.style.transform = 'translate3d(-24%, 0, 0) rotate('+thisMin+'deg)';
+	hourHand.style.transform = 'translate3d(-24%, 0, 0) rotate('+thisHour+'deg)';
 }
 copyrightDate.textContent = year;
 

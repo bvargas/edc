@@ -2563,13 +2563,13 @@ main {
 main .time {
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 10.7vw;
+  left: 24%;
+  width: 5.3vw;
   height: auto;
-  -webkit-transform: translate3d(-50%, 0, 0) rotate(0deg);
-          transform: translate3d(-50%, 0, 0) rotate(0deg);
+  -webkit-transform: translate3d(-24%, 0, 0) rotate(0deg);
+          transform: translate3d(-24%, 0, 0) rotate(0deg);
 }
 main img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
