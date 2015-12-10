@@ -2684,7 +2684,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(5) {
-  background-image: url("../img/album-colorized.jpg");
+  background-image: url("../img/album-clock.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2692,7 +2692,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(6) {
-  background-image: url("../img/album-kitten.jpg");
+  background-image: url("../img/album-colorized.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2700,7 +2700,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(7) {
-  background-image: url("../img/album-form.jpg");
+  background-image: url("../img/album-kitten.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2708,7 +2708,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(8) {
-  background-image: url("../img/album-grandfloral.jpg");
+  background-image: url("../img/album-form.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2716,7 +2716,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(9) {
-  background-image: url("../img/album-loader.jpg");
+  background-image: url("../img/album-grandfloral.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2724,7 +2724,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(10) {
-  background-image: url("../img/album-maze.jpg");
+  background-image: url("../img/album-loader.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2732,7 +2732,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(11) {
-  background-image: url("../img/album-music.jpg");
+  background-image: url("../img/album-maze.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2740,7 +2740,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(12) {
-  background-image: url("../img/album-lights.jpg");
+  background-image: url("../img/album-music.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2748,7 +2748,7 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(13) {
-  background-image: url("../img/album-switch.jpg");
+  background-image: url("../img/album-lights.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2756,6 +2756,14 @@ header .heading h4 {
   background-position: top;
 }
 #portfolio .pics div:nth-of-type(14) {
+  background-image: url("../img/album-switch.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#portfolio .pics div:first-of-type {
+  background-position: top;
+}
+#portfolio .pics div:nth-of-type(15) {
   background-image: url("../img/album-typing.jpg");
   background-size: cover;
   background-position: center;
@@ -3116,6 +3124,22 @@ footer div ul li a:hover {
     color: #980641;
   }
   #portfolio .pics div:nth-of-type(14) {
+    background-image: none;
+  }
+  #portfolio .pics div {
+    height: auto;
+    width: 100%;
+    margin: 5px;
+  }
+  #portfolio .pics div a {
+    display: block;
+    font-size: 1em;
+    background-color: transparent;
+  }
+  #portfolio .pics div a:hover {
+    color: #980641;
+  }
+  #portfolio .pics div:nth-of-type(15) {
     background-image: none;
   }
   #portfolio .pics div {
