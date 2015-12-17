@@ -1,0 +1,47 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+.div {
+}
+div[class^="div"]{
+	height: 50px;
+}
+.div {
+	&-green {
+		background-color: $green;
+		color: complement($green);
+		font-size: 24px;
+		text-align: center;
+	}
+	&-yellow {
+		background-color: $yellow;
+		color: complement($yellow);
+		font-size: 24px;
+		text-align: center;
+	}
+	&-orange {
+		background-color: $orange;
+		color: complement($orange);
+		font-size: 24px;
+		text-align: center;
+	}
+	&-red {
+		background-color: $red;
+		color: complement($red);
+		font-size: 24px;
+		text-align: center;
+	}
+	&-purple {
+		background-color: $purple;
+		color: complement($purple);
+		font-size: 24px;
+		text-align: center;
+	}
+	&-blue {
+		background-color: $blue;
+		color: complement($blue);
+		font-size: 24px;
+		text-align: center;
+	}
+}

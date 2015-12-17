@@ -1,0 +1,41 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+header {
+	color: white;
+	div {
+		background-color: hsla(0, 0%, 0%, 0.9);
+		padding: 30px 0;
+		font-size: 2em;
+	}
+	nav {
+		width: 100%;
+		background-color: hsla(343, 83%, 37%, 1);
+		padding: 20px;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			width: 50%;
+			text-transform: uppercase;
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+main {
+	width: 100%;
+	margin: 0;
+	.imgsec {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		div {
+			box-sizing: border-box;
+			width: (100 / 4);
+			padding: 20px;
+		}
+	}
+}
